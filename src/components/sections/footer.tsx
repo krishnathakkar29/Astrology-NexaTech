@@ -1,15 +1,20 @@
+"use client";
+
+import type React from "react";
+
 import {
+  Star,
   Facebook,
+  Twitter,
   Instagram,
   Mail,
-  MapPin,
   Phone,
-  Star,
-  Twitter,
+  MapPin,
 } from "lucide-react";
-import React from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-function Footer() {
+export default function Footer() {
   return (
     <footer
       className="text-white py-20"
@@ -21,7 +26,7 @@ function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
+            <Link href="/" className="flex items-center space-x-2">
               <div
                 className="w-8 h-8 rounded-full flex items-center justify-center"
                 style={{
@@ -33,7 +38,7 @@ function Footer() {
               <span className="text-xl font-serif font-bold">
                 Astrology Website
               </span>
-            </div>
+            </Link>
             <p className="text-white/80 leading-relaxed">
               Illuminating your path through ancient wisdom and cosmic guidance.
               Discover your destiny with our expert astrological services.
@@ -70,36 +75,18 @@ function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  className="text-white/80 hover:text-white transition-colors duration-300"
-                  href="/"
-                >
-                  Home
-                </a>
+                <FooterLink href="/">Home</FooterLink>
               </li>
               <li>
-                <a
-                  className="text-white/80 hover:text-white transition-colors duration-300"
-                  href="/about"
-                >
-                  About Us
-                </a>
+                <FooterLink href="/about">About Us</FooterLink>
               </li>
               <li>
-                <a
-                  className="text-white/80 hover:text-white transition-colors duration-300"
-                  href="/services/astrology"
-                >
-                  Astrology
-                </a>
+                <FooterLink href="/services/astrology">Astrology</FooterLink>
               </li>
               <li>
-                <a
-                  className="text-white/80 hover:text-white transition-colors duration-300"
-                  href="/book-appointment"
-                >
+                <FooterLink href="/book-appointment">
                   Book Consultation
-                </a>
+                </FooterLink>
               </li>
             </ul>
           </div>
@@ -114,36 +101,18 @@ function Footer() {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  className="text-white/80 hover:text-white transition-colors duration-300"
-                  href="/services/palmistry"
-                >
-                  Palmistry
-                </a>
+                <FooterLink href="/services/palmistry">Palmistry</FooterLink>
               </li>
               <li>
-                <a
-                  className="text-white/80 hover:text-white transition-colors duration-300"
-                  href="/services/numerology"
-                >
-                  Numerology
-                </a>
+                <FooterLink href="/services/numerology">Numerology</FooterLink>
               </li>
               <li>
-                <a
-                  className="text-white/80 hover:text-white transition-colors duration-300"
-                  href="/solutions/gemstones"
-                >
-                  Gemstones
-                </a>
+                <FooterLink href="/solutions/gemstones">Gemstones</FooterLink>
               </li>
               <li>
-                <a
-                  className="text-white/80 hover:text-white transition-colors duration-300"
-                  href="/solutions/grah-shanti-pooja"
-                >
+                <FooterLink href="/solutions/grah-shanti-pooja">
                   Grah Shanti Pooja
-                </a>
+                </FooterLink>
               </li>
             </ul>
           </div>
@@ -202,4 +171,25 @@ function Footer() {
   );
 }
 
-export default Footer;
+// Helper component for footer links with active state
+function FooterLink({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) {
+  const pathname = usePathname();
+  const isActive = href === "/" ? pathname === "/" : pathname.startsWith(href);
+
+  return (
+    <Link
+      href={href}
+      className={`transition-colors duration-300 ${
+        isActive ? "text-rose-400" : "text-white/80 hover:text-white"
+      }`}
+    >
+      {children}
+    </Link>
+  );
+}
