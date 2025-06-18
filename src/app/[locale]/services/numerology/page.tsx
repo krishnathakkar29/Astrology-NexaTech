@@ -5,6 +5,7 @@ import LanguageSwitcher from "@/components/common/language-switcher";
 
 export default function NumerologyPage() {
   const t = useTranslations("services.numerology");
+  
   return (
     <>
       {" "}
