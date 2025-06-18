@@ -31,7 +31,7 @@ export default function LanguageSwitcher() {
         className="flex items-center gap-2 bg-white/10 hover:bg-white/20 transition-all px-4 py-2 rounded-full text-white"
       >
         <Globe className="w-4 h-4" />
-        <span>{currentLanguage?.flag}</span>
+        {/* <span>{currentLanguage?.flag}</span> */}
         <span>{currentLanguage?.name}</span>
       </button>
 
