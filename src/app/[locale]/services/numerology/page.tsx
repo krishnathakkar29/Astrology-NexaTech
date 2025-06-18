@@ -1,9 +1,13 @@
 import CosmicCTA from "@/components/common/common-cta";
 import { CheckCircle } from "lucide-react";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "@/components/common/language-switcher";
 
 export default function NumerologyPage() {
+  const t = useTranslations("services.numerology");
   return (
     <>
+      {" "}
       {/* Hero Section */}
       <section
         className="py-20 text-center relative overflow-hidden"
@@ -16,14 +20,13 @@ export default function NumerologyPage() {
             className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-6"
             style={{ color: "#DAB1AE" }}
           >
-            Numerology
+            {t("hero.title")}
           </h1>
           <p
             className="text-xl md:text-2xl mb-8 leading-relaxed max-w-4xl mx-auto"
             style={{ color: "#DAB1AE", opacity: 0.9 }}
           >
-            Unlock the mystical power of numbers and discover your life's hidden
-            patterns and destiny
+            {t("hero.subtitle")}
           </p>
         </div>
 
@@ -55,8 +58,7 @@ export default function NumerologyPage() {
             animationDelay: "1s",
           }}
         ></div>
-      </section>
-
+      </section>{" "}
       {/* The Science of Numbers */}
       <section
         className="py-20 bg-white"
@@ -69,28 +71,12 @@ export default function NumerologyPage() {
             {/* Left Content */}
             <div>
               <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8 text-slate-800">
-                The Science of Numbers
+                {t("science.title")}
               </h2>
               <div className="space-y-6 text-slate-600 leading-relaxed">
-                <p>
-                  Numerology is the ancient metaphysical science that reveals
-                  the mystical relationship between numbers and life events.
-                  Based on the belief that numbers carry vibrational energy,
-                  numerology can provide profound insights into your
-                  personality, destiny, and life purpose.
-                </p>
-                <p>
-                  By analyzing the numbers derived from your birth date and
-                  name, we can uncover your life path number, destiny number,
-                  soul urge number, and other significant numerical influences
-                  that shape your journey through life.
-                </p>
-                <p>
-                  Our numerological analysis provides practical guidance for
-                  making important decisions, understanding your natural
-                  talents, and choosing the most auspicious timing for
-                  significant life events.
-                </p>
+                <p>{t("science.paragraphs.0")}</p>
+                <p>{t("science.paragraphs.1")}</p>
+                <p>{t("science.paragraphs.2")}</p>
               </div>
             </div>
 
@@ -106,8 +92,7 @@ export default function NumerologyPage() {
             </div>
           </div>
         </div>
-      </section>
-
+      </section>{" "}
       {/* Understanding Number Vibrations */}
       <section
         className="py-20"
@@ -118,208 +103,208 @@ export default function NumerologyPage() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-slate-800">
-              Understanding Number Vibrations
+              {t("vibrations.title")}
             </h2>
             <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-              Each number carries unique energy and characteristics that
-              influence your life
+              {t("vibrations.subtitle")}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {" "}
             {/* Number 1 */}
             <div className="bg-white rounded-2xl p-6 shadow-lg">
-              <div className="text-center mb-4">
-                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-rose-400">
-                  <span className="text-2xl font-bold text-white">1</span>
+              <div className="text-center mb-4">                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-rose-400">
+                  <span className="text-2xl font-bold text-white">
+                    {String(t("vibrations.numbers.0.digit"))}
+                  </span>
                 </div>
                 <h3 className="text-xl font-serif font-bold text-slate-800 mb-3">
-                  Leadership & Independence
+                  {t("vibrations.numbers.0.name")}
                 </h3>
-              </div>
+              </div>{" "}
               <ul className="space-y-2">
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Natural leader
+                  {t("vibrations.numbers.0.traits.0")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Pioneer spirit
+                  {t("vibrations.numbers.0.traits.1")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Independent
+                  {t("vibrations.numbers.0.traits.2")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Creative
+                  {t("vibrations.numbers.0.traits.3")}
                 </li>
               </ul>
-            </div>
-
-            {/* Number 2 */}
+            </div>{" "}
+            {/* Number 2 */}{" "}
             <div className="bg-white rounded-2xl p-6 shadow-lg">
-              <div className="text-center mb-4">
-                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-rose-400">
-                  <span className="text-2xl font-bold text-white">2</span>
+              <div className="text-center mb-4">                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-rose-400">
+                  <span className="text-2xl font-bold text-white">
+                    {String(t("vibrations.numbers.1.digit"))}
+                  </span>
                 </div>
                 <h3 className="text-xl font-serif font-bold text-slate-800 mb-3">
-                  Cooperation & Harmony
+                  {t("vibrations.numbers.1.name")}
                 </h3>
               </div>
               <ul className="space-y-2">
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Diplomatic
+                  {t("vibrations.numbers.1.traits.0")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Cooperative
+                  {t("vibrations.numbers.1.traits.1")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Sensitive
+                  {t("vibrations.numbers.1.traits.2")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Peaceful
+                  {t("vibrations.numbers.1.traits.3")}
                 </li>
               </ul>
             </div>
-
-            {/* Number 3 */}
+            {/* Number 3 */}{" "}
             <div className="bg-white rounded-2xl p-6 shadow-lg">
-              <div className="text-center mb-4">
-                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-rose-400">
-                  <span className="text-2xl font-bold text-white">3</span>
+              <div className="text-center mb-4">                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-rose-400">
+                  <span className="text-2xl font-bold text-white">
+                    {String(t("vibrations.numbers.2.digit"))}
+                  </span>
                 </div>
                 <h3 className="text-xl font-serif font-bold text-slate-800 mb-3">
-                  Creativity & Expression
+                  {t("vibrations.numbers.2.name")}
                 </h3>
               </div>
               <ul className="space-y-2">
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Artistic
+                  {t("vibrations.numbers.2.traits.0")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Communicative
+                  {t("vibrations.numbers.2.traits.1")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Optimistic
+                  {t("vibrations.numbers.2.traits.2")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Social
+                  {t("vibrations.numbers.2.traits.3")}
                 </li>
               </ul>
             </div>
-
             {/* Number 4 */}
             <div className="bg-white rounded-2xl p-6 shadow-lg">
-              <div className="text-center mb-4">
-                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-rose-400">
-                  <span className="text-2xl font-bold text-white">4</span>
+              <div className="text-center mb-4">                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-rose-400">
+                  <span className="text-2xl font-bold text-white">
+                    {String(t("vibrations.numbers.3.digit"))}
+                  </span>
                 </div>
                 <h3 className="text-xl font-serif font-bold text-slate-800 mb-3">
-                  Stability & Hard Work
+                  {t("vibrations.numbers.3.name")}
                 </h3>
               </div>
               <ul className="space-y-2">
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Practical
+                  {t("vibrations.numbers.3.traits.0")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Reliable
+                  {t("vibrations.numbers.3.traits.1")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Methodical
+                  {t("vibrations.numbers.3.traits.2")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Patient
+                  {t("vibrations.numbers.3.traits.3")}
                 </li>
               </ul>
-            </div>
-
+            </div>{" "}
             {/* Number 5 */}
             <div className="bg-white rounded-2xl p-6 shadow-lg">
-              <div className="text-center mb-4">
-                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-rose-400">
-                  <span className="text-2xl font-bold text-white">5</span>
+              <div className="text-center mb-4">                <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-rose-400">
+                  <span className="text-2xl font-bold text-white">
+                    {String(t("vibrations.numbers.4.digit"))}
+                  </span>
                 </div>
                 <h3 className="text-xl font-serif font-bold text-slate-800 mb-3">
-                  Freedom & Adventure
+                  {t("vibrations.numbers.4.name")}
                 </h3>
               </div>
               <ul className="space-y-2">
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Adventurous
+                  {t("vibrations.numbers.4.traits.0")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Versatile
+                  {t("vibrations.numbers.4.traits.1")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Progressive
+                  {t("vibrations.numbers.4.traits.2")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Dynamic
+                  {t("vibrations.numbers.4.traits.3")}
                 </li>
               </ul>
-            </div>
-
+            </div>{" "}
             {/* Number 6 */}
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="text-center mb-4">
                 <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-rose-400">
-                  <span className="text-2xl font-bold text-white">6</span>
+                  <span className="text-2xl font-bold text-white">
+                    {t("vibrations.numbers.5.digit")}
+                  </span>
                 </div>
                 <h3 className="text-xl font-serif font-bold text-slate-800 mb-3">
-                  Nurturing & Responsibility
+                  {t("vibrations.numbers.5.name")}
                 </h3>
               </div>
               <ul className="space-y-2">
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Caring
+                  {t("vibrations.numbers.5.traits.0")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Responsible
+                  {t("vibrations.numbers.5.traits.1")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Healing
+                  {t("vibrations.numbers.5.traits.2")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Family-oriented
+                  {t("vibrations.numbers.5.traits.3")}
                 </li>
               </ul>
             </div>
           </div>
         </div>
-      </section>
-
+      </section>{" "}
       {/* Your Complete Numerology Profile */}
       <section className="py-20 text-white" style={{ background: "#280F43" }}>
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-white">
-              Your Complete Numerology Profile
+              {t("profile.title")}
             </h2>
             <p className="text-white/80 text-lg max-w-3xl mx-auto">
-              Comprehensive numerical analysis covering all aspects of your
-              personal vibrations
+              {t("profile.subtitle")}
             </p>
           </div>
 
@@ -333,12 +318,9 @@ export default function NumerologyPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">
-                    Life path number calculation
+                    {t("profile.items.0")}
                   </h3>
-                  <p className="text-white/80">
-                    Detailed calculation and interpretation with practical
-                    applications for your life.
-                  </p>
+                  <p className="text-white/80">{t("profile.items.1")}</p>
                 </div>
               </div>
 
@@ -349,12 +331,9 @@ export default function NumerologyPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">
-                    Destiny number analysis
+                    {t("profile.items.2")}
                   </h3>
-                  <p className="text-white/80">
-                    Detailed calculation and interpretation with practical
-                    applications for your life.
-                  </p>
+                  <p className="text-white/80">{t("profile.items.3")}</p>
                 </div>
               </div>
 
@@ -365,12 +344,9 @@ export default function NumerologyPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">
-                    Lucky numbers and dates
+                    {t("profile.items.4")}
                   </h3>
-                  <p className="text-white/80">
-                    Detailed calculation and interpretation with practical
-                    applications for your life.
-                  </p>
+                  <p className="text-white/80">{t("profile.items.5")}</p>
                 </div>
               </div>
 
@@ -381,54 +357,58 @@ export default function NumerologyPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-white mb-2">
-                    Name numerology
+                    {t("profile.items.6")}
                   </h3>
-                  <p className="text-white/80">
-                    Detailed calculation and interpretation with practical
-                    applications for your life.
-                  </p>
+                  <p className="text-white/80">{t("profile.items.7")}</p>
                 </div>
               </div>
-            </div>
-
+            </div>{" "}
             {/* Right Content - Sample Chart */}
             <div className="rounded-2xl p-8" style={{ background: "#382144" }}>
               <h3 className="text-2xl font-serif font-bold mb-6 text-white text-center">
-                Sample Numerology Chart
+                {t("profile.items.8")}
               </h3>
               <div className="space-y-4 mb-6">
                 <div className="flex justify-between items-center p-3 bg-black/20 rounded">
                   <span className="font-medium text-white">
-                    Life Path Number:
+                    {t("profile.items.9")}
                   </span>
-                  <span className="text-rose-300 font-bold text-xl">7</span>
+                  <span className="text-rose-300 font-bold text-xl">
+                    {t("profile.items.10")}
+                  </span>
                 </div>
                 <div className="flex justify-between items-center p-3 bg-black/20 rounded">
                   <span className="font-medium text-white">
-                    Destiny Number:
+                    {t("profile.items.11")}
                   </span>
-                  <span className="text-rose-300 font-bold text-xl">3</span>
+                  <span className="text-rose-300 font-bold text-xl">
+                    {t("profile.items.12")}
+                  </span>
                 </div>
                 <div className="flex justify-between items-center p-3 bg-black/20 rounded">
                   <span className="font-medium text-white">
-                    Soul Urge Number:
+                    {t("profile.items.13")}
                   </span>
-                  <span className="text-rose-300 font-bold text-xl">5</span>
+                  <span className="text-rose-300 font-bold text-xl">
+                    {t("profile.items.14")}
+                  </span>
                 </div>
                 <div className="flex justify-between items-center p-3 bg-black/20 rounded">
-                  <span className="font-medium text-white">Lucky Number:</span>
-                  <span className="text-rose-300 font-bold text-xl">9</span>
+                  <span className="font-medium text-white">
+                    {t("profile.items.15")}
+                  </span>
+                  <span className="text-rose-300 font-bold text-xl">
+                    {t("profile.items.16")}
+                  </span>
                 </div>
               </div>
               <p className="text-white/80 text-center text-sm">
-                Your personalized chart will include detailed explanations and
-                guidance for each number.
+                {t("profile.items.17")}
               </p>
             </div>
           </div>
         </div>
-      </section>
-
+      </section>{" "}
       {/* Benefits of Numerological Guidance */}
       <section
         className="py-20"
@@ -439,11 +419,10 @@ export default function NumerologyPage() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-slate-800">
-              Benefits of Numerological Guidance
+              {t("benefits.title")}
             </h2>
             <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-              Discover how numbers can illuminate your path and enhance your
-              decision-making
+              {t("benefits.subtitle")}
             </p>
           </div>
 
@@ -476,7 +455,7 @@ export default function NumerologyPage() {
                   </svg>
                 </div>
                 <p className="text-slate-800 font-medium">
-                  Discover your life purpose through numbers
+                  {t("benefits.items.0")}
                 </p>
               </div>
 
@@ -506,7 +485,7 @@ export default function NumerologyPage() {
                   </svg>
                 </div>
                 <p className="text-slate-800 font-medium">
-                  Find your lucky numbers and colors
+                  {t("benefits.items.1")}
                 </p>
               </div>
 
@@ -536,7 +515,7 @@ export default function NumerologyPage() {
                   </svg>
                 </div>
                 <p className="text-slate-800 font-medium">
-                  Understand personality traits numerically
+                  {t("benefits.items.2")}
                 </p>
               </div>
             </div>
@@ -569,7 +548,7 @@ export default function NumerologyPage() {
                   </svg>
                 </div>
                 <p className="text-slate-800 font-medium">
-                  Choose auspicious dates for events
+                  {t("benefits.items.3")}
                 </p>
               </div>
 
@@ -599,14 +578,13 @@ export default function NumerologyPage() {
                   </svg>
                 </div>
                 <p className="text-slate-800 font-medium">
-                  Optimize your name for success
+                  {t("benefits.items.4")}
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
+      </section>{" "}
       {/* How Numerology Analysis Works */}
       <section
         className="py-20"
@@ -617,10 +595,10 @@ export default function NumerologyPage() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-slate-800">
-              How Numerology Analysis Works
+              {t("howItWorks.title")}
             </h2>
             <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-              Simple steps to unlock the power of your personal numbers
+              {t("howItWorks.subtitle")}
             </p>
           </div>
 
@@ -634,11 +612,9 @@ export default function NumerologyPage() {
                 <span className="text-2xl font-bold text-white">1</span>
               </div>
               <h3 className="text-xl font-serif font-bold mb-4 text-slate-800">
-                Birth Date Analysis
+                {t("howItWorks.steps.0")}
               </h3>
-              <p className="text-slate-600">
-                We calculate your core numbers from your birth date
-              </p>
+              <p className="text-slate-600">{t("howItWorks.steps.1")}</p>
             </div>
 
             {/* Step 2 */}
@@ -650,11 +626,9 @@ export default function NumerologyPage() {
                 <span className="text-2xl font-bold text-white">2</span>
               </div>
               <h3 className="text-xl font-serif font-bold mb-4 text-slate-800">
-                Name Vibration
+                {t("howItWorks.steps.2")}
               </h3>
-              <p className="text-slate-600">
-                Analyze the numerical value of your full name
-              </p>
+              <p className="text-slate-600">{t("howItWorks.steps.3")}</p>
             </div>
 
             {/* Step 3 */}
@@ -666,11 +640,9 @@ export default function NumerologyPage() {
                 <span className="text-2xl font-bold text-white">3</span>
               </div>
               <h3 className="text-xl font-serif font-bold mb-4 text-slate-800">
-                Pattern Recognition
+                {t("howItWorks.steps.4")}
               </h3>
-              <p className="text-slate-600">
-                Identify recurring numbers and their significance
-              </p>
+              <p className="text-slate-600">{t("howItWorks.steps.5")}</p>
             </div>
 
             {/* Step 4 */}
@@ -682,22 +654,19 @@ export default function NumerologyPage() {
                 <span className="text-2xl font-bold text-white">4</span>
               </div>
               <h3 className="text-xl font-serif font-bold mb-4 text-slate-800">
-                Guidance & Application
+                {t("howItWorks.steps.6")}
               </h3>
-              <p className="text-slate-600">
-                Practical advice for applying numerological insights
-              </p>
+              <p className="text-slate-600">{t("howItWorks.steps.7")}</p>
             </div>
           </div>
         </div>
-      </section>
-
+      </section>{" "}
       <CosmicCTA
-        title="Discover Your Personal Numbers"
-        description="nlock the mystical power of numbers and gain profound insights into your life purpose, personality, and destiny through personalized numerological analysis."
+        title={t("cta.title")}
+        description={t("cta.description")}
         button={{
-          label: "Book Your Numerology Reading",
-          action: { type: "link", href: "/book-appointment" },
+          label: t("cta.buttonLabel"),
+          action: { type: "link", href: t("cta.buttonLink") },
         }}
       />
     </>

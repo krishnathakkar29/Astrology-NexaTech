@@ -1,0 +1,1303 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "astrology": "Astrology",
+    "palmistry": "Palmistry",
+    "numerology": "Numerology",
+    "remedies": "Remedies",
+    "career": "Career",
+    "education": "Education",
+    "marriage": "Marriage & Progeny",
+    "muhurat": "Muhurat Timings",
+    "solutions": "Solutions",
+    "gemstones": "Gemstones",
+    "pooja": "Grah Shanti Pooja",
+    "bookAppointment": "Book Appointment",
+    "language": "Language"
+  },
+  "about": {
+    "title": "About Cosmic Insights",
+    "subtitle": "Bridging ancient wisdom with modern understanding to guide you on your spiritual journey",
+    "bookConsultation": "Book Consultation",
+    "ourStory": {
+      "title": "Our Story",
+      "desc1": "Founded in 1995 by Pandit Rajesh Sharma, Cosmic Insights began as a small consultancy dedicated to providing authentic Vedic astrological guidance. Over the decades, we have grown into a trusted name in astrology, renowned for our accuracy, integrity, and compassionate approach.",
+      "desc2": "Today, our team of expert astrologers continues the tradition of blending ancient wisdom with modern understanding, helping thousands of individuals navigate life's challenges and discover their true potential."
+    },
+    "ourMission": {
+      "title": "Our Mission",
+      "desc": "To illuminate life paths through authentic astrological guidance, helping individuals make informed decisions, overcome challenges, and fulfill their cosmic potential."
+    },
+    "ourValues": {
+      "title": "Our Values",
+      "authenticity": {
+        "title": "Authenticity",
+        "description": "We practice traditional Vedic astrology with integrity, respecting its ancient wisdom."
+      },
+      "compassion": {
+        "title": "Compassion",
+        "description": "We approach every consultation with empathy and understanding of life's complexities."
+      },
+      "empowerment": {
+        "title": "Empowerment",
+        "description": "We believe in giving you knowledge to make informed decisions, not creating dependency."
+      },
+      "respect": {
+        "title": "Respect",
+        "description": "We honor all spiritual paths and cultural backgrounds in our practice."
+      }
+    },
+    "meetExperts": {
+      "title": "Meet Our Experts",
+      "experts": [
+        {
+          "name": "Pandit Rajesh Sharma",
+          "title": "Founder & Chief Astrologer",
+          "description": "With over 40 years of experience in Vedic astrology, Pandit Rajesh combines traditional wisdom with practical guidance."
+        },
+        {
+          "name": "Dr. Sunita Verma",
+          "title": "Senior Astrologer & Palmist",
+          "description": "Specializing in relationship astrology and palmistry, Dr. Sunita has helped thousands find clarity in their personal lives."
+        },
+        {
+          "name": "Acharya Vikram Singh",
+          "title": "Numerologist & Remedy Expert",
+          "description": "A master of numerology and remedial measures, Acharya Vikram excels at finding practical solutions to complex problems."
+        }
+      ]
+    },
+    "sacredMission": {
+      "title": "Our Sacred Mission",
+      "desc1": "For over two decades, Cosmic Insights has been a beacon of authentic astrological wisdom, helping thousands of souls discover their true purpose and navigate life's cosmic currents with confidence and clarity.",
+      "desc2": "Founded by a lineage of traditional Vedic astrologers, we honor the ancient scriptures while embracing modern understanding to provide relevant, accurate, and transformative guidance for today's seekers.",
+      "desc3": "Our approach combines rigorous astrological analysis with compassionate counseling, ensuring that each consultation not only reveals cosmic insights but also provides practical guidance for real‑world challenges."
+    },
+
+    "achievements": {
+      "title": "Our Achievements",
+      "subtitle": "Numbers that reflect our commitment to excellence and client satisfaction",
+      "stats": {
+        "happyClients": "Happy Clients",
+        "yearsExperience": "Years Experience",
+        "accuratePredictions": "Accurate Predictions",
+        "clientSatisfaction": "Client Satisfaction"
+      }
+    },
+
+    "philosophy": {
+      "title": "Our Philosophy",
+      "subtitle": "Grounded in tradition, guided by compassion, focused on transformation",
+      "items": [
+        {
+          "title": "Ancient Wisdom",
+          "description": "We honor the timeless teachings of Vedic astrology, passed down through generations of enlightened masters."
+        },
+        {
+          "title": "Compassionate Service",
+          "description": "Every consultation is conducted with empathy, understanding, and genuine care for your wellbeing and growth."
+        },
+        {
+          "title": "Proven Results",
+          "description": "Our record of accurate predictions and successful remedies speaks to the effectiveness of our approach."
+        }
+      ]
+    },
+    "meetExpertAstrologers": {
+      "title": "Meet Our Expert Astrologers",
+      "description": "Our team of certified practitioners brings decades of experience and authentic knowledge to every consultation"
+    }
+  },
+  "hero": {
+    "title": "Discover Your Cosmic Destiny",
+    "subtitle": "Unlock the secrets of your future with ancient Vedic wisdom and modern astrological insights. Find clarity, purpose, and guidance for your life's journey.",
+    "cta": "Book Consultation"
+  },
+  "astrology": {
+    "title": "What is Astrology?",
+    "description1": "Astrology is the ancient science that studies the correlation between celestial movements and earthly events. For thousands of years, this sacred knowledge has helped humanity understand the deeper patterns of life, revealing insights about personality, relationships, career, and spiritual growth.",
+    "description2": "Our expert astrologers combine traditional Vedic wisdom with modern understanding to provide you with accurate, personalized guidance that can transform your life's journey.",
+    "cta": "Learn More About Our Approach"
+  },
+  "sacredServices": {
+    "title": "Our Services",
+    "subtitle": "Discover the ancient wisdom through our comprehensive range of mystical services, each designed to illuminate different aspects of your cosmic journey.",
+    "vedic": {
+      "title": "Vedic Astrology",
+      "description": "Comprehensive birth chart analysis revealing your life path, strengths, challenges, and cosmic influences.",
+      "feature1": "Detailed birth chart reading",
+      "feature2": "Planetary period analysis",
+      "feature3": "Life predictions and guidance",
+      "feature4": "Remedial measures"
+    },
+    "palmistry": {
+      "title": "Palmistry",
+      "description": "Ancient art of reading palms to reveal personality traits, life events, and future possibilities.",
+      "feature1": "Life line analysis",
+      "feature2": "Heart and head line reading",
+      "feature3": "Mount interpretation",
+      "feature4": "Finger and nail analysis"
+    },
+    "numerology": {
+      "title": "Numerology",
+      "description": "Mystical study of numbers and their influence on your life, personality, and destiny.",
+      "feature1": "Life path number calculation",
+      "feature2": "Destiny number analysis",
+      "feature3": "Lucky numbers and dates",
+      "feature4": "Name numerology"
+    },
+    "learnMore": "Learn More"
+  },
+  "whyChoose": {
+    "title": "Why Choose Cosmic Insights?",
+    "subtitle": "Experience the difference that authentic expertise and genuine care can make in your spiritual journey.",
+    "expert": {
+      "title": "Expert Astrologers",
+      "description": "Our team consists of highly experienced and certified Vedic astrologers with decades of practice."
+    },
+    "accurate": {
+      "title": "Accurate Predictions",
+      "description": "We pride ourselves on providing precise and reliable astrological insights based on ancient wisdom."
+    },
+    "personalized": {
+      "title": "Personalized Guidance",
+      "description": "Every consultation is tailored to your unique birth chart and individual circumstances."
+    },
+    "confidential": {
+      "title": "Confidential Service",
+      "description": "Your personal information and consultations are kept strictly confidential and secure."
+    },
+    "holistic": {
+      "title": "Holistic Approach",
+      "description": "We combine traditional astrology with modern understanding for comprehensive life guidance."
+    },
+    "support": {
+      "title": "Ongoing Support",
+      "description": "We provide continuous support and follow-up guidance for your spiritual journey."
+    }
+  },
+  "cta": {
+    "title": "Ready to Unlock Your Cosmic Potential?",
+    "subtitle": "Take the first step towards a more enlightened future. Book your personalized consultation today and discover what the stars have in store for you.",
+    "bookConsultation": "Book Your Consultation",
+    "exploreServices": "Explore Our Services"
+  },
+  "remedies": {
+    "career": {
+      "hero": {
+        "badge": "Career Remedies",
+        "title": "Accelerate Your Career Success",
+        "subtitle": "Unlock your professional potential with powerful astrological remedies designed to boost career growth, overcome obstacles, and achieve lasting success."
+      },
+      "benefits": {
+        "title": "Career Benefits",
+        "subtitle": "Transform your professional life with ancient wisdom",
+        "items": [
+          "Accelerate career growth",
+          "Overcome professional obstacles",
+          "Enhance leadership qualities",
+          "Improve work relationships",
+          "Increase financial prosperity",
+          "Find ideal career path"
+        ]
+      },
+      "remedies": {
+        "title": "Career Remedies",
+        "subtitle": "Powerful solutions for professional advancement",
+        "items": [
+          {
+            "icon": "Briefcase",
+            "title": "Career Enhancement Rituals",
+            "description": "Specific pujas and ceremonies to remove career obstacles and attract new opportunities."
+          },
+          {
+            "icon": "TrendingUp",
+            "title": "Success Mantras",
+            "description": "Powerful mantras to boost professional growth, leadership skills, and career advancement."
+          },
+          {
+            "icon": "Building",
+            "title": "Business Remedies",
+            "description": "Special solutions for entrepreneurs and business owners to ensure growth and prosperity."
+          },
+          {
+            "icon": "Target",
+            "title": "Recognition Therapy",
+            "description": "Remedies to gain recognition, appreciation, and respect in your professional field."
+          }
+        ]
+      },
+      "specializations": {
+        "title": "Career Specializations",
+        "subtitle": "Tailored solutions for every professional journey",
+        "categories": [
+          {
+            "icon": "Target",
+            "title": "Job Seekers",
+            "description": "Find the perfect job opportunity aligned with your skills and planetary influences.",
+            "features": [
+              "Interview success remedies",
+              "Job attraction mantras",
+              "Timing for applications"
+            ]
+          },
+          {
+            "icon": "Users",
+            "title": "Corporate Professionals",
+            "description": "Advance in your corporate career with remedies for promotion and leadership roles.",
+            "features": [
+              "Promotion enhancement",
+              "Leadership development",
+              "Workplace harmony"
+            ]
+          },
+          {
+            "icon": "TrendingUp",
+            "title": "Entrepreneurs",
+            "description": "Build and grow your business with astrological guidance and success remedies.",
+            "features": [
+              "Business launch timing",
+              "Partnership compatibility",
+              "Financial growth"
+            ]
+          },
+          {
+            "icon": "ArrowRight",
+            "title": "Career Transition",
+            "description": "Navigate career changes smoothly with proper timing and planetary support.",
+            "features": [
+              "Career change guidance",
+              "Skill development",
+              "New field adaptation"
+            ]
+          }
+        ]
+      },
+      "planetaryInfluences": {
+        "title": "Planetary Career Influences",
+        "subtitle": "Understanding cosmic forces in your professional life",
+        "planets": [
+          {
+            "name": "Sun",
+            "areas": "Leadership, Authority, Government Jobs",
+            "remedies": ["Sun mantras", "Ruby gemstone", "Sunday fasting"]
+          },
+          {
+            "name": "Moon",
+            "areas": "Public Relations, Healthcare, Hospitality",
+            "remedies": ["Moon mantras", "Pearl gemstone", "Monday rituals"]
+          },
+          {
+            "name": "Mars",
+            "areas": "Military, Sports, Engineering, Real Estate",
+            "remedies": ["Mars mantras", "Red Coral", "Tuesday worship"]
+          },
+          {
+            "name": "Mercury",
+            "areas": "Communication, IT, Business, Education",
+            "remedies": [
+              "Mercury mantras",
+              "Emerald gemstone",
+              "Wednesday prayers"
+            ]
+          },
+          {
+            "name": "Jupiter",
+            "areas": "Teaching, Law, Banking, Spirituality",
+            "remedies": [
+              "Jupiter mantras",
+              "Yellow Sapphire",
+              "Thursday rituals"
+            ]
+          },
+          {
+            "name": "Venus",
+            "areas": "Arts, Entertainment, Fashion, Luxury",
+            "remedies": [
+              "Venus mantras",
+              "Diamond/White Sapphire",
+              "Friday worship"
+            ]
+          }
+        ]
+      },
+      "consultationProcess": {
+        "title": "Our Career Consultation Process",
+        "subtitle": "Systematic approach to professional success",
+        "steps": [
+          "Career chart analysis to identify professional strengths and challenges",
+          "Assessment of current career situation and future goals",
+          "Planetary influence evaluation on career prospects",
+          "Customized remedy plan for specific career objectives",
+          "Implementation guidance with proper timing and procedures",
+          "Regular progress monitoring and remedy adjustments"
+        ]
+      },
+      "cta": {
+        "title": "Ready to Transform Your Career?",
+        "description": "Take charge of your professional destiny with our expert career guidance and powerful remedies.",
+        "buttonLabel": "Book Career Consultation",
+        "buttonLink": "/book-appointment"
+      }
+    },
+    "education": {
+      "hero": {
+        "badge": "Educational Excellence",
+        "title": "Academic Success Through Ancient Wisdom",
+        "subtitle": "Unlock your learning potential and achieve educational excellence with time‑tested astrological remedies designed to enhance concentration, memory, and academic performance."
+      },
+      "consultationProcess": {
+        "title": "Our Educational Consultation Process",
+        "subtitle": "Structured approach to academic success",
+        "steps": [
+          "Educational chart analysis to identify learning patterns and obstacles",
+          "Assessment of current academic challenges and goals",
+          "Personalized remedy plan based on planetary influences",
+          "Implementation of mantras, gemstones, and ritual practices",
+          "Ongoing support and guidance throughout the educational journey"
+        ]
+      },
+      "expertise": {
+        "title": "Areas of Expertise",
+        "subtitle": "Comprehensive educational support",
+        "categories": [
+          {
+            "icon": "BookOpen",
+            "title": "Academic Performance",
+            "description": "Remedies for improving grades, concentration, and overall academic excellence.",
+            "features": [
+              "Memory enhancement techniques",
+              "Focus improvement mantras",
+              "Study schedule optimization"
+            ]
+          },
+          {
+            "icon": "Target",
+            "title": "Competitive Exams",
+            "description": "Special guidance for entrance exams, competitive tests, and professional certifications.",
+            "features": [
+              "Exam‑specific remedies",
+              "Stress reduction techniques",
+              "Confidence building practices"
+            ]
+          },
+          {
+            "icon": "TrendingUp",
+            "title": "Higher Education",
+            "description": "Support for college admissions, research work, and advanced studies abroad.",
+            "features": [
+              "University selection guidance",
+              "Scholarship assistance",
+              "Research enhancement"
+            ]
+          },
+          {
+            "icon": "GraduationCap",
+            "title": "Career Transition",
+            "description": "Educational guidance for career changes and professional skill development.",
+            "features": [
+              "Skill enhancement remedies",
+              "Career transition support",
+              "Professional growth mantras"
+            ]
+          }
+        ]
+      },
+      "remedies": {
+        "title": "Educational Remedies",
+        "subtitle": "Powerful solutions for academic success",
+        "items": [
+          {
+            "icon": "GraduationCap",
+            "title": "Saraswati Puja",
+            "description": "Special worship of Goddess Saraswati to enhance wisdom, knowledge, and learning abilities."
+          },
+          {
+            "icon": "Target",
+            "title": "Mercury Strengthening",
+            "description": "Remedies to strengthen Mercury planet for improved intellect and communication skills."
+          },
+          {
+            "icon": "BookOpen",
+            "title": "Vidya Mantras",
+            "description": "Powerful educational mantras to remove obstacles in learning and boost academic performance."
+          },
+          {
+            "icon": "TrendingUp",
+            "title": "Success Rituals",
+            "description": "Special ceremonies performed during auspicious times for examination success and career growth."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Educational Benefits",
+        "subtitle": "Achieve academic excellence through ancient wisdom",
+        "items": [
+          "Improve concentration and memory",
+          "Overcome learning difficulties",
+          "Achieve academic excellence",
+          "Enhance creative abilities",
+          "Reduce exam stress and anxiety",
+          "Unlock hidden potential"
+        ]
+      },
+      "cta": {
+        "title": "Ready to Excel in Your Studies?",
+        "description": "Unlock your full academic potential with our personalized educational remedies and expert guidance for lasting success.",
+        "buttonLabel": "Book Educational Consultation",
+        "buttonLink": "/book-appointment"
+      }
+    },
+    "marriageProgeny": {
+      "hero": {
+        "badge": "Marriage & Family",
+        "title": "Blissful Marriage & Divine Progeny",
+        "subtitle": "Find your life partner, strengthen marital bonds, and receive divine blessings for progeny through powerful Vedic remedies and ancient wisdom."
+      },
+      "benefits": {
+        "title": "Marriage & Progeny Benefits",
+        "subtitle": "Transform your relationship journey through cosmic guidance",
+        "items": [
+          "Overcome delays in marriage",
+          "Improve relationship compatibility",
+          "Resolve family conflicts",
+          "Enhance fertility and conception",
+          "Strengthen marital bonds",
+          "Remove obstacles in love life"
+        ]
+      },
+      "remedies": {
+        "title": "Marriage & Progeny Remedies",
+        "subtitle": "Sacred solutions for love, marriage, and family",
+        "items": [
+          {
+            "icon": "Star",
+            "title": "Vedic Rituals",
+            "description": "Specific pujas and ceremonies to invoke divine blessings for marriage and progeny."
+          },
+          {
+            "icon": "Heart",
+            "title": "Gemstone Therapy",
+            "description": "Wearing specific gemstones to strengthen Venus and enhance love relationships."
+          },
+          {
+            "icon": "Users",
+            "title": "Mantra Chanting",
+            "description": "Powerful mantras to remove obstacles and attract the right life partner."
+          },
+          {
+            "icon": "Baby",
+            "title": "Fertility Enhancing",
+            "description": "Special remedies and practices to overcome conception difficulties and bless with children."
+          }
+        ]
+      },
+      "specializedAreas": {
+        "title": "Specialized Areas",
+        "subtitle": "Comprehensive support for all relationship aspects",
+        "categories": [
+          {
+            "title": "Marriage Timing",
+            "description": "Find the most auspicious time for marriage through careful astrological analysis.",
+            "features": [
+              "Muhurat selection",
+              "Planetary alignment",
+              "Compatible timing"
+            ]
+          },
+          {
+            "title": "Partner Compatibility",
+            "description": "Assess compatibility between partners for a harmonious married life.",
+            "features": [
+              "Kundali matching",
+              "Guna Milan analysis",
+              "Manglik considerations"
+            ]
+          },
+          {
+            "title": "Relationship Issues",
+            "description": "Resolve conflicts and strengthen bonds between partners and families.",
+            "features": [
+              "Communication remedies",
+              "Trust building practices",
+              "Family harmony rituals"
+            ]
+          },
+          {
+            "title": "Progeny Concerns",
+            "description": "Address fertility issues and bless couples with healthy children.",
+            "features": [
+              "Fertility enhancement",
+              "Conception timing",
+              "Child health protection"
+            ]
+          }
+        ]
+      },
+      "consultationProcess": {
+        "title": "Our Consultation Process",
+        "subtitle": "Step-by-step guidance for your relationship journey",
+        "steps": [
+          "Detailed birth chart analysis for marriage and progeny prospects",
+          "Assessment of planetary influences affecting relationships",
+          "Customized remedial plan including mantras, gemstones, and rituals",
+          "Guidance on timing for marriage ceremonies and conception",
+          "Ongoing support throughout your relationship journey"
+        ]
+      },
+      "cta": {
+        "title": "Ready to Find Your Soulmate?",
+        "description": "Take the first step towards a blissful marriage and divine progeny with our personalized astrological guidance and sacred remedies.",
+        "buttonLabel": "Book Marriage Consultation",
+        "buttonLink": "/book-appointment"
+      }
+    },
+    "muhuratTimings": {
+      "hero": {
+        "badge": "Muhurat & Timings",
+        "title": "Perfect Timing for Life's Important Moments",
+        "subtitle": "Align your important life events with cosmic energies through precise muhurat calculations and auspicious timing selection for maximum success and prosperity."
+      },
+      "benefits": {
+        "title": "Muhurat Benefits",
+        "subtitle": "Harness cosmic timing for life's most important moments",
+        "items": [
+          "Choose auspicious timing for important events",
+          "Maximize success probability",
+          "Align with cosmic energies",
+          "Avoid inauspicious periods",
+          "Enhance positive outcomes",
+          "Create harmonious beginnings"
+        ]
+      },
+      "types": {
+        "title": "Types of Muhurat",
+        "subtitle": "Specialized timing for every important occasion",
+        "items": [
+          {
+            "icon": "Star",
+            "title": "Wedding Muhurat",
+            "description": "Perfect timing for marriage ceremonies to ensure lifelong happiness and prosperity.",
+            "perfectFor": [
+              "Wedding ceremony",
+              "Engagement",
+              "Ring ceremony",
+              "Reception"
+            ]
+          },
+          {
+            "icon": "Calendar",
+            "title": "Business Muhurat",
+            "description": "Auspicious timing for business ventures, office inauguration, and financial decisions.",
+            "perfectFor": [
+              "Business launch",
+              "Office opening",
+              "Partnership",
+              "Investment decisions"
+            ]
+          },
+          {
+            "icon": "Sun",
+            "title": "Spiritual Muhurat",
+            "description": "Sacred timing for religious ceremonies, temple visits, and spiritual practices.",
+            "perfectFor": [
+              "Pooja ceremonies",
+              "Temple visits",
+              "Spiritual initiations",
+              "Religious festivals"
+            ]
+          },
+          {
+            "icon": "Moon",
+            "title": "Personal Muhurat",
+            "description": "Favorable timing for personal milestones and important life decisions.",
+            "perfectFor": [
+              "House warming",
+              "Vehicle purchase",
+              "Education start",
+              "Travel planning"
+            ]
+          }
+        ]
+      },
+      "timingConsiderations": {
+        "title": "Timing Considerations",
+        "subtitle": "Factors analyzed for perfect muhurat selection",
+        "items": [
+          {
+            "title": "Planetary Positions",
+            "description": "Analysis of favorable planetary alignments and their influence on success.",
+            "features": [
+              "Beneficial planet positions",
+              "Avoiding malefic influences",
+              "Strength of ascendant"
+            ]
+          },
+          {
+            "title": "Lunar Calendar",
+            "description": "Consideration of moon phases and lunar days for optimal timing.",
+            "features": [
+              "Waxing vs waning moon",
+              "Tithi calculations",
+              "Lunar mansion influence"
+            ]
+          },
+          {
+            "title": "Nakshatra Analysis",
+            "description": "Selection based on favorable star constellations and their energies.",
+            "features": [
+              "Ruling deity influence",
+              "Constellation compatibility",
+              "Star-based predictions"
+            ]
+          },
+          {
+            "title": "Weekday Selection",
+            "description": "Choosing the most auspicious day of the week for specific activities.",
+            "features": [
+              "Planetary day rulers",
+              "Activity-specific days",
+              "Personal compatibility"
+            ]
+          }
+        ]
+      },
+      "periodsToAvoid": {
+        "title": "Periods to Avoid",
+        "subtitle": "Inauspicious timings that should be avoided",
+        "items": [
+          {
+            "title": "Rahu Kaal",
+            "description": "Inauspicious time period ruled by shadow planet Rahu.",
+            "duration": "1.5 hours daily",
+            "impact": "Delays and obstacles"
+          },
+          {
+            "title": "Yamaganda Kaal",
+            "description": "Period associated with death deity, unfavorable for new beginnings.",
+            "duration": "1.5 hours daily",
+            "impact": "Negative outcomes"
+          },
+          {
+            "title": "Gulika Kaal",
+            "description": "Time influenced by malefic energies causing hindrances.",
+            "duration": "1.5 hours daily",
+            "impact": "Financial losses"
+          },
+          {
+            "title": "Void of Course Moon",
+            "description": "When moon makes no major aspects before changing signs.",
+            "duration": "Variable",
+            "impact": "Lack of progress"
+          }
+        ]
+      },
+      "consultationProcess": {
+        "title": "Our Muhurat Consultation Process",
+        "subtitle": "Systematic approach to finding perfect timing",
+        "steps": [
+          "Analysis of your birth chart and current planetary periods",
+          "Understanding the nature and importance of your planned event",
+          "Calculation of most favorable dates and times based on cosmic influences",
+          "Providing alternative dates in case of scheduling conflicts",
+          "Detailed timing recommendations with do's and don'ts for the occasion"
+        ]
+      },
+      "cta": {
+        "title": "Ready to Choose Perfect Timing?",
+        "description": "Ensure success in your important endeavors with precisely calculated muhurat timings based on ancient Vedic wisdom and cosmic alignments.",
+        "buttonLabel": "Book Muhurat Consultation",
+        "buttonLink": "/book-appointment"
+      }
+    }
+  },
+  "solutions": {
+    "gemstones": {
+      "hero": {
+        "badge": "Gemstone Therapy",
+        "title": "Cosmic Power of Sacred Gemstones",
+        "subtitle": "Harness the healing energies of precious gemstones to enhance your life, balance planetary influences, and attract prosperity through ancient wisdom."
+      },
+      "benefits": {
+        "title": "Gemstone Benefits",
+        "subtitle": "Transform your life through the power of sacred stones",
+        "items": [
+          "Enhance positive planetary energies",
+          "Neutralize negative influences",
+          "Improve health and vitality",
+          "Attract wealth and prosperity",
+          "Strengthen relationships",
+          "Boost confidence and charisma"
+        ]
+      },
+      "categories": {
+        "title": "Gemstone Categories",
+        "subtitle": "Different types of stones for various healing purposes",
+        "items": [
+          {
+            "icon": "Crown",
+            "title": "Precious Gemstones",
+            "description": "High‑powered gems for major planetary influences and life transformations.",
+            "examples": [
+              "Ruby (Sun)",
+              "Red Coral (Mars)",
+              "Yellow Sapphire (Jupiter)",
+              "Blue Sapphire (Saturn)",
+              "Pearl (Moon)",
+              "Emerald (Mercury)",
+              "Diamond (Venus)"
+            ]
+          },
+          {
+            "icon": "Diamond",
+            "title": "Semi-Precious Stones",
+            "description": "Effective alternatives with gentle yet powerful healing properties.",
+            "examples": [
+              "Garnet",
+              "Carnelian",
+              "Citrine",
+              "Amethyst",
+              "Moonstone",
+              "Peridot",
+              "White Sapphire"
+            ]
+          },
+          {
+            "icon": "Sparkles",
+            "title": "Healing Crystals",
+            "description": "Supportive stones for daily wear and chakra balancing.",
+            "examples": [
+              "Clear Quartz",
+              "Amethyst",
+              "Aventurine",
+              "Hematite",
+              "Rose Quartz",
+              "Tiger's Eye",
+              "Turquoise"
+            ]
+          },
+          {
+            "icon": "Shield",
+            "title": "Protective Stones",
+            "description": "Special gems for protection against negative energies and evil eye.",
+            "examples": [
+              "Black Tourmaline",
+              "Labradorite",
+              "Black Onyx",
+              "Jasper",
+              "Obsidian",
+              "Smoky Quartz",
+              "Agate"
+            ]
+          }
+        ]
+      },
+      "planetaryGemstones": {
+        "title": "Planetary Gemstones",
+        "subtitle": "Nine sacred gems for the nine celestial influencers",
+        "items": [
+          {
+            "planet": "Sun",
+            "gem": "Ruby",
+            "benefits": [
+              "Leadership qualities",
+              "Confidence boost",
+              "Career advancement",
+              "Vitality enhancement"
+            ],
+            "wear": "Gold ring, Sunday morning, Ring finger",
+            "mantra": "Om Hraam Hreem Hraum Sah Suryaya Namah"
+          },
+          {
+            "planet": "Moon",
+            "gem": "Pearl",
+            "benefits": [
+              "Emotional balance",
+              "Mental peace",
+              "Intuition enhancement",
+              "Relationship harmony"
+            ],
+            "wear": "Silver ring, Monday evening, Little finger",
+            "mantra": "Om Shraam Shreem Shraum Sah Chandraya Namah"
+          },
+          {
+            "planet": "Mars",
+            "gem": "Red Coral",
+            "benefits": [
+              "Courage and strength",
+              "Energy boost",
+              "Protection from enemies",
+              "Success in competition"
+            ],
+            "wear": "Gold/Copper ring, Tuesday morning, Ring finger",
+            "mantra": "Om Kraam Kreem Kraum Sah Bhaumaya Namah"
+          }
+        ]
+      },
+      "qualityAssessment": {
+        "title": "Quality Assessment",
+        "subtitle": "Essential factors for selecting powerful gemstones",
+        "items": [
+          {
+            "title": "Clarity",
+            "description": "Natural gems should have minimal inclusions for maximum energy transmission",
+            "highlight": "Clear energy flow"
+          },
+          {
+            "title": "Color",
+            "description": "Vibrant, natural color intensity indicates strong planetary connection",
+            "highlight": "Energy intensity"
+          },
+          {
+            "title": "Cut",
+            "description": "Proper proportions and faceting to optimize light and energy reflection",
+            "highlight": "Energy amplification"
+          },
+          {
+            "title": "Carat Weight",
+            "description": "Adequate size based on body weight and planetary requirement calculations",
+            "highlight": "Sufficient power"
+          },
+          {
+            "title": "Origin",
+            "description": "Authentic sources known for high‑quality gems with strong vibrations",
+            "highlight": "Energy authenticity"
+          },
+          {
+            "title": "Treatment",
+            "description": "Natural, untreated stones maintain their original cosmic energies",
+            "highlight": "Pure vibrations"
+          }
+        ]
+      },
+      "selectionProcess": {
+        "title": "Our Gemstone Selection Process",
+        "subtitle": "Scientific approach to finding your perfect healing stone",
+        "steps": [
+          "Detailed birth chart analysis to identify planetary strengths and weaknesses",
+          "Current life situation assessment and specific goals discussion",
+          "Gemstone compatibility testing based on individual energy fields",
+          "Quality selection considering clarity, color, cut, and carat weight",
+          "Proper purification and energization procedures explanation",
+          "Wearing instructions with auspicious timing and mantras"
+        ]
+      },
+      "cta": {
+        "title": "Ready to Find Your Perfect Gemstone?",
+        "description": "Discover the transformative power of authentic gemstones with our expert guidance and personalized selection process.",
+        "buttonLabel": "Book Gemstone Consultation",
+        "buttonLink": "/book-appointment"
+      }
+    },
+
+    "grahShantiPooja": {
+      "hero": {
+        "badge": "Graha Shanti Pooja",
+        "title": "Sacred Planetary Healing",
+        "subtitle": "Transform negative planetary influences into positive cosmic blessings through powerful Vedic fire ceremonies and sacred rituals."
+      },
+      "benefits": {
+        "title": "Benefits of Graha Shanti",
+        "subtitle": "Experience the power of planetary peace ceremonies",
+        "items": [
+          "Pacify malefic planetary influences",
+          "Remove obstacles and negativity",
+          "Enhance positive cosmic energies",
+          "Improve health and prosperity",
+          "Strengthen beneficial planets",
+          "Create harmony in life"
+        ]
+      },
+      "types": {
+        "title": "Types of Graha Shanti Poojas",
+        "subtitle": "Comprehensive planetary healing ceremonies",
+        "items": [
+          {
+            "icon": "Sun",
+            "title": "Individual Planet Poojas",
+            "description": "Specific worship ceremonies for individual planets causing difficulties in your chart.",
+            "options": [
+              "Surya Shanti (Sun)",
+              "Chandra Shanti (Moon)",
+              "Mangal Shanti (Mars)",
+              "Budh Shanti (Mercury)",
+              "Guru Shanti (Jupiter)",
+              "Shukra Shanti (Venus)",
+              "Shani Shanti (Saturn)",
+              "Rahu Shanti",
+              "Ketu Shanti"
+            ]
+          },
+          {
+            "icon": "Star",
+            "title": "Navagraha Shanti Pooja",
+            "description": "Comprehensive ritual to appease all nine planets for complete cosmic harmony.",
+            "keyBenefits": [
+              "Overall life balance",
+              "Protection from all planetary afflictions",
+              "Enhanced positive energies",
+              "Spiritual growth and prosperity"
+            ]
+          },
+          {
+            "icon": "Shield",
+            "title": "Special Doshas Poojas",
+            "description": "Targeted ceremonies for specific astrological problems and planetary combinations.",
+            "doshaSolutions": [
+              "Mangal Dosha",
+              "Shani Dosha",
+              "Rahu-Ketu Dosha",
+              "Pitra Dosha",
+              "Kalsarpa Dosha"
+            ]
+          },
+          {
+            "icon": "Flame",
+            "title": "Graha Homa/Yagna",
+            "description": "Fire rituals with specific mantras and offerings for powerful planetary appeasement.",
+            "ceremonyTypes": [
+              "Daily Homa",
+              "Special Occasion Yagna",
+              "Nakshatra Chant Homa",
+              "Mahamrityunjaya Homa"
+            ]
+          }
+        ]
+      },
+      "afflictions": {
+        "title": "Planetary Afflictions & Solutions",
+        "subtitle": "Specific remedies for each planetary influence",
+        "planets": [
+          {
+            "name": "Sun",
+            "problems": [
+              "Lack of confidence",
+              "Government issues",
+              "Father-related problems",
+              "Health issues"
+            ],
+            "solutions": [
+              "Surya Mantra chanting",
+              "Red cloth donation",
+              "Offering water to Sun",
+              "Ruby gemstone"
+            ],
+            "pooja": "Surya Shanti Pooja with 108 mantras, red flowers, and wheat offerings"
+          },
+          {
+            "name": "Moon",
+            "problems": [
+              "Mental stress",
+              "Emotional instability",
+              "Mother-related issues",
+              "Sleep disorders"
+            ],
+            "solutions": [
+              "Chandra Mantra",
+              "White cloth donation",
+              "Milk offering",
+              "Pearl gemstone"
+            ],
+            "pooja": "Chandra Shanti Pooja with white flowers, rice, and milk offerings"
+          }
+        ]
+      },
+      "package": {
+        "title": "Complete Pooja Package",
+        "subtitle": "Everything included in your planetary healing ceremony",
+        "items": [
+          {
+            "icon": "Sparkles",
+            "title": "Sacred Materials",
+            "description": "All required puja items, flowers, and offerings"
+          },
+          {
+            "icon": "Flame",
+            "title": "Fire Ceremony",
+            "description": "Sacred homa with ghee and specific herbs"
+          },
+          {
+            "icon": "Star",
+            "title": "Mantra Chanting",
+            "description": "108 repetitions of planetary mantras"
+          },
+          {
+            "icon": "Shield",
+            "title": "Energy Blessing",
+            "description": "Final prayers and protective blessings"
+          }
+        ]
+      },
+      "ceremonyProcess": {
+        "title": "Sacred Ceremony Process",
+        "subtitle": "Step‑by‑step planetary healing ritual",
+        "steps": [
+          "Detailed horoscope analysis to identify malefic planetary influences",
+          "Selection of appropriate pooja based on specific planetary problems",
+          "Purification rituals and sacred space preparation",
+          "Invocation of deities and planetary energies",
+          "Mantra chanting with proper pronunciation and rhythm",
+          "Sacred offerings including flowers, grains, and specific items",
+          "Fire ceremony (Homa) with ghee and sacred herbs",
+          "Final prayers and energy blessing for the devotee"
+        ]
+      },
+      "cta": {
+        "title": "Ready for Planetary Healing?",
+        "description": "Transform your life with the divine power of Graha Shanti Pooja and experience cosmic harmony like never before.",
+        "buttonLabel": "Book Graha Shanti Consultation",
+        "buttonLink": "/book-appointment"
+      }
+    }
+  },
+  "services": {
+    "astrology": {
+      "hero": {
+        "title": "Vedic Astrology",
+        "subtitle": "Unlock the mysteries of your life through comprehensive Vedic astrological analysis"
+      },
+      "whatIs": {
+        "title": "What is Vedic Astrology?",
+        "paragraphs": [
+          "Vedic astrology, also known as Jyotisha, is the ancient Indian system of astrology that has been practiced for over 5,000 years. Unlike Western astrology, Vedic astrology uses the sidereal zodiac and incorporates unique techniques for precise predictions and spiritual guidance.",
+          "Our comprehensive astrological analysis examines your birth chart (Kundali) to reveal insights about your personality, relationships, career, health, and spiritual path. We use traditional calculation methods combined with modern interpretation techniques for maximum accuracy.",
+          "Each consultation includes detailed analysis of planetary positions, house interpretations, dasha (planetary periods), and personalized remedial measures to enhance positive influences and mitigate challenges."
+        ]
+      },
+      "included": {
+        "title": "What's Included in Your Reading",
+        "subtitle": "Comprehensive analysis covering all aspects of your cosmic blueprint",
+        "items": [
+          {
+            "title": "Detailed birth chart reading",
+            "description": "In-depth interpretation of your Kundali with practical guidance."
+          },
+          {
+            "title": "Planetary period analysis",
+            "description": "Examination of your current and future dasha periods for timing insights."
+          },
+          {
+            "title": "Life predictions and guidance",
+            "description": "Forecasts for key life areas—career, relationships, health, and more."
+          },
+          {
+            "title": "Remedial measures",
+            "description": "Personalized suggestions—mantras, gemstones, rituals—to balance your chart."
+          }
+        ]
+      },
+      "consultationProcess": {
+        "title": "Our Consultation Process",
+        "subtitle": "A structured approach to deliver accurate and meaningful insights",
+        "steps": [
+          "Birth Details Collection – accurate date, time & place",
+          "Chart Preparation – creating your sidereal birth chart",
+          "Analysis & Interpretation – expert planetary study",
+          "Guidance & Remedies – personalized action plan"
+        ]
+      },
+      "benefits": {
+        "title": "Benefits of Astrological Guidance",
+        "subtitle": "Discover how cosmic wisdom can transform your life journey",
+        "items": [
+          "Understand your life purpose and destiny",
+          "Navigate challenging periods with confidence",
+          "Make informed decisions about career and relationships",
+          "Discover your natural talents and abilities",
+          "Find the best timing for important life events"
+        ]
+      },
+      "cta": {
+        "title": "Ready to Discover Your Cosmic Blueprint?",
+        "description": "Unlock the wisdom of your birth chart and gain profound insights into your life's purpose, challenges, and opportunities.",
+        "buttonLabel": "Book Your Astrology Reading",
+        "buttonLink": "/book-appointment"
+      }
+    },
+    "numerology": {
+      "hero": {
+        "title": "Numerology",
+        "subtitle": "Unlock the mystical power of numbers and discover your life's hidden patterns and destiny"
+      },
+      "science": {
+        "title": "The Science of Numbers",
+        "paragraphs": [
+          "Numerology is the ancient metaphysical science that reveals the mystical relationship between numbers and life events. Based on the belief that numbers carry vibrational energy, numerology can provide profound insights into your personality, destiny, and life purpose.",
+          "By analyzing the numbers derived from your birth date and name, we can uncover your life path number, destiny number, soul urge number, and other significant numerical influences that shape your journey through life.",
+          "Our numerological analysis provides practical guidance for making important decisions, understanding your natural talents, and choosing the most auspicious timing for significant life events."
+        ]
+      },
+      "vibrations": {
+        "title": "Understanding Number Vibrations",
+        "subtitle": "Each number carries unique energy and characteristics that influence your life",
+        "numbers": [
+          {
+            "digit": 1,
+            "name": "Leadership & Independence",
+            "traits": [
+              "Natural leader",
+              "Pioneer spirit",
+              "Independent",
+              "Creative"
+            ]
+          },
+          {
+            "digit": 2,
+            "name": "Cooperation & Harmony",
+            "traits": ["Diplomatic", "Cooperative", "Sensitive", "Peaceful"]
+          },
+          {
+            "digit": 3,
+            "name": "Creativity & Expression",
+            "traits": ["Artistic", "Communicative", "Optimistic", "Social"]
+          },
+          {
+            "digit": 4,
+            "name": "Stability & Hard Work",
+            "traits": ["Practical", "Reliable", "Methodical", "Patient"]
+          },
+          {
+            "digit": 5,
+            "name": "Freedom & Adventure",
+            "traits": ["Adventurous", "Versatile", "Progressive", "Dynamic"]
+          },
+          {
+            "digit": 6,
+            "name": "Nurturing & Responsibility",
+            "traits": ["Caring", "Responsible", "Healing", "Family-oriented"]
+          }
+        ]
+      },
+      "profile": {
+        "title": "Your Complete Numerology Profile",
+        "subtitle": "Comprehensive numerical analysis covering all aspects of your personal vibrations",
+        "items": [
+          {
+            "title": "Life path number calculation",
+            "description": "Detailed calculation and interpretation with practical applications for your life."
+          },
+          {
+            "title": "Destiny number analysis",
+            "description": "Detailed calculation and interpretation with practical applications for your life."
+          },
+          {
+            "title": "Lucky numbers and dates",
+            "description": "Detailed calculation and interpretation with practical applications for your life."
+          },
+          {
+            "title": "Name numerology",
+            "description": "Detailed calculation and interpretation with practical applications for your life."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Benefits of Numerological Guidance",
+        "subtitle": "Discover how numbers can illuminate your path and enhance your decision-making",
+        "items": [
+          "Discover your life purpose through numbers",
+          "Find your lucky numbers and colors",
+          "Understand personality traits numerically",
+          "Choose auspicious dates for events",
+          "Optimize your name for success"
+        ]
+      },
+      "howItWorks": {
+        "title": "How Numerology Analysis Works",
+        "subtitle": "Simple steps to unlock the power of your personal numbers",
+        "steps": [
+          "Birth Date Analysis – we calculate your core numbers from your birth date",
+          "Name Vibration – analyze the numerical value of your full name",
+          "Pattern Recognition – identify recurring numbers and their significance",
+          "Guidance & Application – practical advice for applying numerological insights"
+        ]
+      },
+      "cta": {
+        "title": "Discover Your Personal Numbers",
+        "description": "Unlock the mystical power of numbers and gain profound insights into your life purpose, personality, and destiny through personalized numerological analysis.",
+        "buttonLabel": "Book Your Numerology Reading",
+        "buttonLink": "/book-appointment"
+      }
+    },
+    "palmistry": {
+      "hero": {
+        "title": "Palmistry",
+        "subtitle": "Discover your destiny written in the lines of your palms through ancient palmistry wisdom"
+      },
+      "whatIs": {
+        "title": "The Ancient Art of Palm Reading",
+        "paragraphs": [
+          "Palmistry, also known as chiromancy, is an ancient divination practice that has been used for thousands of years to understand personality traits, predict future events, and gain insights into an individual's life path through the study of palm lines, mounts, and hand characteristics.",
+          "Your palms contain a detailed map of your life's journey. Every line, mount, and finger formation tells a unique story about your personality, relationships, career prospects, health patterns, and spiritual development.",
+          "Our expert palmists combine traditional techniques with modern psychological understanding to provide you with accurate, insightful readings that can guide your decisions and illuminate your path forward."
+        ]
+      },
+      "lines": {
+        "title": "Understanding Your Palm Lines",
+        "subtitle": "Each line on your palm tells a unique story about different aspects of your life",
+        "items": [
+          {
+            "name": "Life Line",
+            "description": "Reveals vitality, health, and major life events",
+            "note": "Shows your energy levels and life path"
+          },
+          {
+            "name": "Heart Line",
+            "description": "Indicates emotional nature and relationships",
+            "note": "Reveals your capacity for love and emotional expression"
+          },
+          {
+            "name": "Head Line",
+            "description": "Shows intellectual capacity and mental approach",
+            "note": "Indicates thinking patterns and decision‑making style"
+          },
+          {
+            "name": "Fate Line",
+            "description": "Career path and life direction indicators",
+            "note": "Shows how external forces shape your destiny"
+          }
+        ]
+      },
+      "included": {
+        "title": "What's Included in Your Reading",
+        "subtitle": "Comprehensive palm analysis covering all aspects of your hand characteristics",
+        "items": [
+          {
+            "title": "Life line analysis",
+            "description": "Detailed examination and interpretation of this palm aspect."
+          },
+          {
+            "title": "Heart and head line reading",
+            "description": "Detailed examination and interpretation of these palm aspects."
+          },
+          {
+            "title": "Mount interpretation",
+            "description": "Insights from the mounts of each finger and palm."
+          },
+          {
+            "title": "Finger and nail analysis",
+            "description": "Study of finger shape, length, and nail characteristics."
+          }
+        ]
+      },
+      "benefits": {
+        "title": "Benefits of Palm Reading",
+        "subtitle": "Discover how palmistry can provide valuable insights for your life journey",
+        "items": [
+          "Understand your personality and character",
+          "Gain insights into health and longevity",
+          "Discover relationship patterns",
+          "Identify potential opportunities",
+          "Learn about your creative abilities"
+        ]
+      },
+      "cta": {
+        "title": "Ready to Read Your Palms?",
+        "description": "Discover the secrets hidden in your palms and gain valuable insights into your personality, relationships, and future possibilities.",
+        "buttonLabel": "Book Your Palmistry Reading",
+        "buttonLink": "/book-appointment"
+      }
+    }
+  }
+}

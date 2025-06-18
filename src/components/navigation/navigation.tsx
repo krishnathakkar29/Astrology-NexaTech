@@ -1,14 +1,19 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { Star, ChevronDown, Menu, X } from "lucide-react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useState } from "react";
+import { Star, ChevronDown, Menu, X, Globe } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 
 export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
+
   const pathname = usePathname();
+  const router = useRouter();
+  const locale = useLocale();
+  const t = useTranslations("navigation");
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -18,9 +23,19 @@ export default function Navigation() {
     setOpenDropdown(openDropdown === dropdown ? null : dropdown);
   };
 
+  const toggleLanguageDropdown = () => {
+    setIsLanguageDropdownOpen(!isLanguageDropdownOpen);
+  };
+
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
     setOpenDropdown(null);
+    setIsLanguageDropdownOpen(false);
+  };
+
+  const changeLanguage = (newLocale: string) => {
+    router.replace(pathname, { locale: newLocale });
+    setIsLanguageDropdownOpen(false);
   };
 
   // Helper function to check if a path is active
@@ -34,6 +49,13 @@ export default function Navigation() {
   const isDropdownActive = (paths: string[]) => {
     return paths.some((path) => isActivePath(path));
   };
+
+  const languages = [
+    { code: "en", name: "English", flag: "🇺🇸" },
+    { code: "hi", name: "हिंदी", flag: "🇮🇳" },
+  ];
+
+  const currentLanguage = languages.find((lang) => lang.code === locale);
 
   return (
     <>
@@ -66,6 +88,7 @@ export default function Navigation() {
 
             {/* Desktop Menu */}
             <div className="hidden lg:flex items-center space-x-8 mr-3">
+              {" "}
               <Link
                 href="/"
                 className={`font-medium transition-colors duration-200 ${
@@ -74,9 +97,8 @@ export default function Navigation() {
                     : "text-slate-700 hover:text-rose-400"
                 }`}
               >
-                Home
+                {t("home")}
               </Link>
-
               {/* Services Dropdown */}
               <div className="relative group">
                 <button
@@ -86,7 +108,8 @@ export default function Navigation() {
                       : "text-slate-700 hover:text-rose-400"
                   }`}
                 >
-                  <span>Services</span>
+                  {" "}
+                  <span>{t("services")}</span>
                   <ChevronDown className="w-4 h-4" />
                 </button>
                 <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
@@ -99,7 +122,7 @@ export default function Navigation() {
                           : "text-slate-700 hover:bg-rose-50 hover:text-rose-400"
                       }`}
                     >
-                      Astrology
+                      {t("astrology")}
                     </Link>
                     <Link
                       href="/services/palmistry"
@@ -109,7 +132,7 @@ export default function Navigation() {
                           : "text-slate-700 hover:bg-rose-50 hover:text-rose-400"
                       }`}
                     >
-                      Palmistry
+                      {t("palmistry")}
                     </Link>
                     <Link
                       href="/services/numerology"
@@ -119,12 +142,11 @@ export default function Navigation() {
                           : "text-slate-700 hover:bg-rose-50 hover:text-rose-400"
                       }`}
                     >
-                      Numerology
+                      {t("numerology")}
                     </Link>
                   </div>
                 </div>
               </div>
-
               {/* Remedies Dropdown */}
               <div className="relative group">
                 <button
@@ -134,7 +156,8 @@ export default function Navigation() {
                       : "text-slate-700 hover:text-rose-400"
                   }`}
                 >
-                  <span>Remedies</span>
+                  {" "}
+                  <span>{t("remedies")}</span>
                   <ChevronDown className="w-4 h-4" />
                 </button>
                 <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
@@ -182,7 +205,6 @@ export default function Navigation() {
                   </div>
                 </div>
               </div>
-
               {/* Solutions Dropdown */}
               <div className="relative group">
                 <button
@@ -192,7 +214,8 @@ export default function Navigation() {
                       : "text-slate-700 hover:text-rose-400"
                   }`}
                 >
-                  <span>Solutions</span>
+                  {" "}
+                  <span>{t("solutions")}</span>
                   <ChevronDown className="w-4 h-4" />
                 </button>
                 <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
@@ -219,8 +242,7 @@ export default function Navigation() {
                     </Link>
                   </div>
                 </div>
-              </div>
-
+              </div>{" "}
               <Link
                 href="/about"
                 className={`font-medium transition-colors duration-200 ${
@@ -229,9 +251,46 @@ export default function Navigation() {
                     : "text-slate-700 hover:text-rose-400"
                 }`}
               >
-                About Us
+                {t("about")}
               </Link>
+              {/* Language Switcher */}
+              <div className="relative">
+                <button
+                  onClick={toggleLanguageDropdown}
+                  className="flex items-center space-x-2 px-3 py-2 rounded-lg text-slate-700 hover:text-rose-400 hover:bg-rose-50 transition-all duration-200"
+                >
+                  <Globe className="w-4 h-4" />
+                  <span className="text-lg">{currentLanguage?.flag}</span>
+                  <span className="font-medium">{currentLanguage?.name}</span>
+                  <ChevronDown
+                    className={`w-4 h-4 transition-transform duration-200 ${
+                      isLanguageDropdownOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
 
+                {isLanguageDropdownOpen && (
+                  <div className="absolute top-full right-0 mt-2 w-48 bg-white rounded-lg shadow-xl border border-gray-100 py-2 z-50">
+                    {languages.map((language) => (
+                      <button
+                        key={language.code}
+                        onClick={() => changeLanguage(language.code)}
+                        className={`w-full flex items-center space-x-3 px-4 py-2 text-left transition-colors duration-200 ${
+                          locale === language.code
+                            ? "bg-rose-50 text-rose-400"
+                            : "text-slate-700 hover:bg-rose-50 hover:text-rose-400"
+                        }`}
+                      >
+                        <span className="text-lg">{language.flag}</span>
+                        <span className="font-medium">{language.name}</span>
+                        {locale === language.code && (
+                          <div className="ml-auto w-2 h-2 bg-rose-400 rounded-full"></div>
+                        )}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
               <Link
                 href="/book-appointment"
                 className="text-white px-6 py-2 rounded-full text-sm font-medium transition-all duration-300 hover:shadow-lg"
@@ -338,7 +397,7 @@ export default function Navigation() {
                       />
                     </button>
                     {openDropdown === "services" && (
-                      <div className="ml-4 mt-2 space-y-2 animate-accordion-down">
+                      <div className="ml-4 mt-2 space-y-2">
                         <Link
                           href="/services/astrology"
                           className={`block py-2 text-base transition-colors ${
@@ -376,114 +435,44 @@ export default function Navigation() {
                     )}
                   </div>
 
-                  {/* Remedies */}
+                  {/* Language Switcher Mobile */}
                   <div>
                     <button
-                      className={`flex items-center justify-between w-full py-3 text-lg font-medium transition-colors ${
-                        isDropdownActive(["/remedies"])
-                          ? "text-rose-400"
-                          : "text-gray-700 hover:text-rose-400"
-                      }`}
-                      onClick={() => toggleDropdown("remedies")}
+                      className="flex items-center justify-between w-full py-3 text-lg font-medium text-gray-700 hover:text-rose-400 transition-colors"
+                      onClick={() => toggleDropdown("language")}
                     >
-                      <span>Remedies</span>
-                      <ChevronDown
-                        className={`w-5 h-5 transition-transform duration-200 ${
-                          openDropdown === "remedies" ? "rotate-180" : ""
-                        }`}
-                      />
-                    </button>
-                    {openDropdown === "remedies" && (
-                      <div className="ml-4 mt-2 space-y-2 animate-accordion-down">
-                        <Link
-                          href="/remedies/marriage-progeny"
-                          className={`block py-2 text-base transition-colors ${
-                            isActivePath("/remedies/marriage-progeny")
-                              ? "text-rose-400"
-                              : "text-gray-600 hover:text-rose-400"
-                          }`}
-                          onClick={closeMobileMenu}
-                        >
-                          Marriage & Progeny
-                        </Link>
-                        <Link
-                          href="/remedies/education"
-                          className={`block py-2 text-base transition-colors ${
-                            isActivePath("/remedies/education")
-                              ? "text-rose-400"
-                              : "text-gray-600 hover:text-rose-400"
-                          }`}
-                          onClick={closeMobileMenu}
-                        >
-                          Education – Field to Choose
-                        </Link>
-                        <Link
-                          href="/remedies/career"
-                          className={`block py-2 text-base transition-colors ${
-                            isActivePath("/remedies/career")
-                              ? "text-rose-400"
-                              : "text-gray-600 hover:text-rose-400"
-                          }`}
-                          onClick={closeMobileMenu}
-                        >
-                          Career
-                        </Link>
-                        <Link
-                          href="/remedies/muhurat-timings"
-                          className={`block py-2 text-base transition-colors ${
-                            isActivePath("/remedies/muhurat-timings")
-                              ? "text-rose-400"
-                              : "text-gray-600 hover:text-rose-400"
-                          }`}
-                          onClick={closeMobileMenu}
-                        >
-                          Muhurat & Timings
-                        </Link>
+                      <div className="flex items-center space-x-2">
+                        <Globe className="w-5 h-5" />
+                        <span>Language</span>
                       </div>
-                    )}
-                  </div>
-
-                  {/* Solutions */}
-                  <div>
-                    <button
-                      className={`flex items-center justify-between w-full py-3 text-lg font-medium transition-colors ${
-                        isDropdownActive(["/solutions"])
-                          ? "text-rose-400"
-                          : "text-gray-700 hover:text-rose-400"
-                      }`}
-                      onClick={() => toggleDropdown("solutions")}
-                    >
-                      <span>Solutions</span>
                       <ChevronDown
                         className={`w-5 h-5 transition-transform duration-200 ${
-                          openDropdown === "solutions" ? "rotate-180" : ""
+                          openDropdown === "language" ? "rotate-180" : ""
                         }`}
                       />
                     </button>
-                    {openDropdown === "solutions" && (
-                      <div className="ml-4 mt-2 space-y-2 animate-accordion-down">
-                        <Link
-                          href="/solutions/gemstones"
-                          className={`block py-2 text-base transition-colors ${
-                            isActivePath("/solutions/gemstones")
-                              ? "text-rose-400"
-                              : "text-gray-600 hover:text-rose-400"
-                          }`}
-                          onClick={closeMobileMenu}
-                        >
-                          Gemstones
-                        </Link>
-                        <Link
-                          href="/solutions/grah-shanti-pooja"
-                          className={`block py-2 text-base transition-colors ${
-                            isActivePath("/solutions/grah-shanti-pooja")
-                              ? "text-rose-400"
-                              : "text-gray-600 hover:text-rose-400"
-                          }`}
-                          onClick={closeMobileMenu}
-                        >
-                          Grah Shanti Pooja
-                        </Link>
+                    {openDropdown === "language" && (
+                      <div className="ml-4 mt-2 space-y-2">
+                        {languages.map((language) => (
+                          <button
+                            key={language.code}
+                            onClick={() => {
+                              changeLanguage(language.code);
+                              closeMobileMenu();
+                            }}
+                            className={`flex items-center space-x-3 w-full py-2 text-base transition-colors ${
+                              locale === language.code
+                                ? "text-rose-400"
+                                : "text-gray-600 hover:text-rose-400"
+                            }`}
+                          >
+                            <span className="text-lg">{language.flag}</span>
+                            <span>{language.name}</span>
+                            {locale === language.code && (
+                              <div className="ml-auto w-2 h-2 bg-rose-400 rounded-full"></div>
+                            )}
+                          </button>
+                        ))}
                       </div>
                     )}
                   </div>

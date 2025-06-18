@@ -1,9 +1,11 @@
+"use client";
+
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { Clock, Heart, Shield, Star, Users } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 
 export default function Home() {
   const t = useTranslations();
@@ -28,12 +30,10 @@ export default function Home() {
           </div>
           <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 animate-fade-in">
-              Discover Your Cosmic Destiny
+              {t("hero.title")}
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90 leading-relaxed max-w-3xl mx-auto animate-slide-up">
-              Unlock the secrets of your future with ancient Vedic wisdom and
-              modern astrological insights. Find clarity, purpose, and guidance
-              for your life's journey.
+              {t("hero.subtitle")}
             </p>
             <div className="animate-scale-in">
               <Button
@@ -42,7 +42,7 @@ export default function Home() {
                   background: `linear-gradient(135deg, #D2A7A8 0%, #8A5570 100%)`,
                 }}
               >
-                Book Consultation
+                {t("hero.cta")}
               </Button>
             </div>
           </div>
@@ -83,24 +83,16 @@ export default function Home() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-8">
                 <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-800 leading-tight">
-                  What is Astrology?
+                  {t("astrology.title")}
                 </h2>
 
                 <div className="space-y-6">
                   <p className="text-slate-600 text-lg leading-relaxed">
-                    Astrology is the ancient science that studies the
-                    correlation between celestial movements and earthly events.
-                    For thousands of years, this sacred knowledge has helped
-                    humanity understand the deeper patterns of life, revealing
-                    insights about personality, relationships, career, and
-                    spiritual growth.
+                    {t("astrology.description1")}
                   </p>
 
                   <p className="text-slate-600 text-lg leading-relaxed">
-                    Our expert astrologers combine traditional Vedic wisdom with
-                    modern understanding to provide you with accurate,
-                    personalized guidance that can transform your life's
-                    journey.
+                    {t("astrology.description2")}
                   </p>
                 </div>
 
@@ -108,7 +100,7 @@ export default function Home() {
                   variant="outline"
                   className="border-2 border-slate-700 text-slate-700 hover:bg-slate-700 hover:text-white px-8 py-3 rounded-full text-base font-medium transition-all duration-300"
                 >
-                  Learn More About Our Approach
+                  {t("astrology.cta")}
                 </Button>
               </div>
 
@@ -128,7 +120,6 @@ export default function Home() {
         </section>
 
         {/* sacred services section */}
-
         <section
           className="py-20"
           style={{
@@ -138,12 +129,10 @@ export default function Home() {
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-slate-800">
-                Our Services
+                {t("sacredServices.title")}
               </h2>
               <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-                Discover the ancient wisdom through our comprehensive range of
-                mystical services, each designed to illuminate different aspects
-                of your cosmic journey.
+                {t("sacredServices.subtitle")}
               </p>
             </div>
 
@@ -160,30 +149,29 @@ export default function Home() {
                     <Star className="w-8 h-8 text-white" fill="currentColor" />
                   </div>
                   <h3 className="text-2xl font-serif font-bold mb-4 text-slate-800">
-                    Vedic Astrology
+                    {t("sacredServices.vedic.title")}
                   </h3>
                   <p className="text-slate-600 leading-relaxed mb-6">
-                    Comprehensive birth chart analysis revealing your life path,
-                    strengths, challenges, and cosmic influences.
+                    {t("sacredServices.vedic.description")}
                   </p>
                 </div>
 
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center text-slate-600">
                     <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                    Detailed birth chart reading
+                    {t("sacredServices.vedic.feature1")}
                   </li>
                   <li className="flex items-center text-slate-600">
                     <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                    Planetary period analysis
+                    {t("sacredServices.vedic.feature2")}
                   </li>
                   <li className="flex items-center text-slate-600">
                     <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                    Life predictions and guidance
+                    {t("sacredServices.vedic.feature3")}
                   </li>
                   <li className="flex items-center text-slate-600">
                     <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                    Remedial measures
+                    {t("sacredServices.vedic.feature4")}
                   </li>
                 </ul>
 
@@ -192,7 +180,7 @@ export default function Home() {
                     variant="outline"
                     className="border-2 border-rose-300 text-rose-400 hover:bg-rose-50 hover:border-rose-400 px-8 py-2 rounded-full transition-all duration-300"
                   >
-                    Learn More
+                    {t("sacredServices.learnMore")}
                   </Button>
                 </div>
               </div>
@@ -209,30 +197,29 @@ export default function Home() {
                     <Users className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-serif font-bold mb-4 text-slate-800">
-                    Palmistry
+                    {t("sacredServices.palmistry.title")}
                   </h3>
                   <p className="text-slate-600 leading-relaxed mb-6">
-                    Ancient art of reading palms to reveal personality traits,
-                    life events, and future possibilities.
+                    {t("sacredServices.palmistry.description")}
                   </p>
                 </div>
 
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center text-slate-600">
                     <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                    Life line analysis
+                    {t("sacredServices.palmistry.feature1")}
                   </li>
                   <li className="flex items-center text-slate-600">
                     <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                    Heart and head line reading
+                    {t("sacredServices.palmistry.feature2")}
                   </li>
                   <li className="flex items-center text-slate-600">
                     <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                    Mount interpretation
+                    {t("sacredServices.palmistry.feature3")}
                   </li>
                   <li className="flex items-center text-slate-600">
                     <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                    Finger and nail analysis
+                    {t("sacredServices.palmistry.feature4")}
                   </li>
                 </ul>
 
@@ -241,7 +228,7 @@ export default function Home() {
                     variant="outline"
                     className="border-2 border-rose-300 text-rose-400 hover:bg-rose-50 hover:border-rose-400 px-8 py-2 rounded-full transition-all duration-300"
                   >
-                    Learn More
+                    {t("sacredServices.learnMore")}
                   </Button>
                 </div>
               </div>
@@ -258,30 +245,29 @@ export default function Home() {
                     <Heart className="w-8 h-8 text-white" />
                   </div>
                   <h3 className="text-2xl font-serif font-bold mb-4 text-slate-800">
-                    Numerology
+                    {t("sacredServices.numerology.title")}
                   </h3>
                   <p className="text-slate-600 leading-relaxed mb-6">
-                    Mystical study of numbers and their influence on your life,
-                    personality, and destiny.
+                    {t("sacredServices.numerology.description")}
                   </p>
                 </div>
 
                 <ul className="space-y-3 mb-8">
                   <li className="flex items-center text-slate-600">
                     <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                    Life path number calculation
+                    {t("sacredServices.numerology.feature1")}
                   </li>
                   <li className="flex items-center text-slate-600">
                     <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                    Destiny number analysis
+                    {t("sacredServices.numerology.feature2")}
                   </li>
                   <li className="flex items-center text-slate-600">
                     <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                    Lucky numbers and dates
+                    {t("sacredServices.numerology.feature3")}
                   </li>
                   <li className="flex items-center text-slate-600">
                     <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                    Name numerology
+                    {t("sacredServices.numerology.feature4")}
                   </li>
                 </ul>
 
@@ -290,7 +276,7 @@ export default function Home() {
                     variant="outline"
                     className="border-2 border-rose-300 text-rose-400 hover:bg-rose-50 hover:border-rose-400 px-8 py-2 rounded-full transition-all duration-300"
                   >
-                    Learn More
+                    {t("sacredServices.learnMore")}
                   </Button>
                 </div>
               </div>
@@ -299,7 +285,6 @@ export default function Home() {
         </section>
 
         {/* why choose us section */}
-
         <section
           className="py-20 text-white"
           style={{
@@ -309,11 +294,10 @@ export default function Home() {
           <div className="container mx-auto px-4 max-w-7xl">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-white">
-                Why Choose Cosmic Insights?
+                {t("whyChoose.title")}
               </h2>
               <p className="text-white/80 text-lg max-w-3xl mx-auto">
-                Experience the difference that authentic expertise and genuine
-                care can make in your spiritual journey.
+                {t("whyChoose.subtitle")}
               </p>
             </div>
 
@@ -332,11 +316,10 @@ export default function Home() {
                   className="text-xl font-serif font-semibold mb-4"
                   style={{ color: "#CDA2A4" }}
                 >
-                  Expert Astrologers
+                  {t("whyChoose.expert.title")}
                 </h3>
                 <p className="text-white/80 leading-relaxed">
-                  Our team consists of highly experienced and certified Vedic
-                  astrologers with decades of practice.
+                  {t("whyChoose.expert.description")}
                 </p>
               </div>
 
@@ -354,11 +337,10 @@ export default function Home() {
                   className="text-xl font-serif font-semibold mb-4"
                   style={{ color: "#CDA2A4" }}
                 >
-                  Accurate Predictions
+                  {t("whyChoose.accurate.title")}
                 </h3>
                 <p className="text-white/80 leading-relaxed">
-                  We pride ourselves on providing precise and reliable
-                  astrological insights based on ancient wisdom.
+                  {t("whyChoose.accurate.description")}
                 </p>
               </div>
 
@@ -376,11 +358,10 @@ export default function Home() {
                   className="text-xl font-serif font-semibold mb-4"
                   style={{ color: "#CDA2A4" }}
                 >
-                  Personalized Guidance
+                  {t("whyChoose.personalized.title")}
                 </h3>
                 <p className="text-white/80 leading-relaxed">
-                  Every consultation is tailored to your unique birth chart and
-                  individual circumstances.
+                  {t("whyChoose.personalized.description")}
                 </p>
               </div>
 
@@ -398,11 +379,10 @@ export default function Home() {
                   className="text-xl font-serif font-semibold mb-4"
                   style={{ color: "#CDA2A4" }}
                 >
-                  Confidential Service
+                  {t("whyChoose.confidential.title")}
                 </h3>
                 <p className="text-white/80 leading-relaxed">
-                  Your personal information and consultations are kept strictly
-                  confidential and secure.
+                  {t("whyChoose.confidential.description")}
                 </p>
               </div>
 
@@ -420,11 +400,10 @@ export default function Home() {
                   className="text-xl font-serif font-semibold mb-4"
                   style={{ color: "#CDA2A4" }}
                 >
-                  Holistic Approach
+                  {t("whyChoose.holistic.title")}
                 </h3>
                 <p className="text-white/80 leading-relaxed">
-                  We combine traditional astrology with modern understanding for
-                  comprehensive life guidance.
+                  {t("whyChoose.holistic.description")}
                 </p>
               </div>
 
@@ -442,17 +421,17 @@ export default function Home() {
                   className="text-xl font-serif font-semibold mb-4"
                   style={{ color: "#CDA2A4" }}
                 >
-                  Ongoing Support
+                  {t("whyChoose.support.title")}
                 </h3>
                 <p className="text-white/80 leading-relaxed">
-                  We provide continuous support and follow-up guidance for your
-                  spiritual journey.
+                  {t("whyChoose.support.description")}
                 </p>
               </div>
             </div>
           </div>
         </section>
 
+        {/* CTA Section */}
         <section
           className="py-20 text-white"
           style={{
@@ -462,12 +441,10 @@ export default function Home() {
           <div className="container mx-auto px-4 max-w-7xl text-center">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
-                Ready to Unlock Your Cosmic Potential?
+                {t("cta.title")}
               </h2>
               <p className="text-xl text-white/90 mb-8 leading-relaxed">
-                Take the first step towards a more enlightened future. Book your
-                personalized consultation today and discover what the stars have
-                in store for you.
+                {t("cta.subtitle")}
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
@@ -483,13 +460,13 @@ export default function Home() {
                     background: `linear-gradient(135deg, #CDA2A4 0%, #97637A 100%)`,
                   }}
                 >
-                  Book Your Consultation
+                  {t("cta.bookConsultation")}
                 </Link>
                 <Button
                   variant="outline"
                   className="border-2 bg-transparent text-white hover:bg-white hover:text-cosmic-purple-dark text-lg px-8 py-4 md:py-8 rounded-full transition-all duration-300"
                 >
-                  Explore Our Services
+                  {t("cta.exploreServices")}
                 </Button>
               </div>
             </div>

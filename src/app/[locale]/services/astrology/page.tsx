@@ -1,9 +1,13 @@
 import CosmicCTA from "@/components/common/common-cta";
 import { Star, CheckCircle } from "lucide-react";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "@/components/common/language-switcher";
 
 export default function AstrologyPage() {
+  const t = useTranslations("services.astrology");
   return (
     <>
+      {" "}
       {/* Hero Section */}
       <section
         className="py-20 text-center relative overflow-hidden"
@@ -12,18 +16,18 @@ export default function AstrologyPage() {
         }}
       >
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
+          
           <h1
             className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-6"
             style={{ color: "#DAB1AE" }}
           >
-            Vedic Astrology
+            {t("hero.title")}
           </h1>
           <p
             className="text-xl md:text-2xl mb-8 leading-relaxed max-w-4xl mx-auto"
             style={{ color: "#DAB1AE", opacity: 0.9 }}
           >
-            Unlock the mysteries of your life through comprehensive Vedic
-            astrological analysis
+            {t("hero.subtitle")}
           </p>
         </div>
 
@@ -55,8 +59,7 @@ export default function AstrologyPage() {
             animationDelay: "1s",
           }}
         ></div>
-      </section>
-
+      </section>{" "}
       {/* What is Vedic Astrology */}
       <section
         className="py-20"
@@ -69,46 +72,30 @@ export default function AstrologyPage() {
             {/* Left Content */}
             <div>
               <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8 text-slate-800">
-                What is Vedic Astrology?
+                {t("whatIs.title")}
               </h2>
               <div className="space-y-6 text-slate-600 leading-relaxed">
-                <p>
-                  Vedic astrology, also known as Jyotisha, is the ancient Indian
-                  system of astrology that has been practiced for over 5,000
-                  years. Unlike Western astrology, Vedic astrology uses the
-                  sidereal zodiac and incorporates unique techniques for precise
-                  predictions and spiritual guidance.
-                </p>
-                <p>
-                  Our comprehensive astrological analysis examines your birth
-                  chart (Kundali) to reveal insights about your personality,
-                  relationships, career, health, and spiritual path. We use
-                  traditional calculation methods combined with modern
-                  interpretation techniques for maximum accuracy.
-                </p>
-                <p>
-                  Each consultation includes detailed analysis of planetary
-                  positions, house interpretations, dasha (planetary periods),
-                  and personalized remedial measures to enhance positive
-                  influences and mitigate challenges.
-                </p>
+                {" "}
+                <p>{t("whatIs.paragraphs.0")}</p>
+                <p>{t("whatIs.paragraphs.1")}</p>
+                <p>{t("whatIs.paragraphs.2")}</p>
               </div>
             </div>
 
             {/* Right Content - Birth Chart */}
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <div className="w-full h-96 flex items-center justify-center">
+                {" "}
                 <img
                   src="/services/astrology.webp"
-                  alt="Vedic Birth Chart"
+                  alt={t("hero.title")}
                   className="w-full h-full object-contain"
                 />
               </div>
             </div>
           </div>
         </div>
-      </section>
-
+      </section>{" "}
       {/* What's Included in Your Reading */}
       <section
         className="py-20"
@@ -119,11 +106,10 @@ export default function AstrologyPage() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-slate-800">
-              What's Included in Your Reading
+              {t("included.title")}
             </h2>
             <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-              Comprehensive analysis covering all aspects of your cosmic
-              blueprint
+              {t("included.subtitle")}
             </p>
           </div>
 
@@ -137,11 +123,10 @@ export default function AstrologyPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-slate-800 mb-2">
-                    Detailed birth chart reading
+                    {t("included.items.0.title")}
                   </h3>
                   <p className="text-slate-600">
-                    Detailed analysis and interpretation with practical guidance
-                    for your life journey.
+                    {t("included.items.0.description")}
                   </p>
                 </div>
               </div>
@@ -153,11 +138,10 @@ export default function AstrologyPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-slate-800 mb-2">
-                    Planetary period analysis
+                    {t("included.items.1.title")}
                   </h3>
                   <p className="text-slate-600">
-                    Detailed analysis and interpretation with practical guidance
-                    for your life journey.
+                    {t("included.items.1.description")}
                   </p>
                 </div>
               </div>
@@ -169,11 +153,10 @@ export default function AstrologyPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-slate-800 mb-2">
-                    Life predictions and guidance
+                    {t("included.items.2.title")}
                   </h3>
                   <p className="text-slate-600">
-                    Detailed analysis and interpretation with practical guidance
-                    for your life journey.
+                    {t("included.items.2.description")}
                   </p>
                 </div>
               </div>
@@ -185,11 +168,10 @@ export default function AstrologyPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-slate-800 mb-2">
-                    Remedial measures
+                    {t("included.items.3.title")}
                   </h3>
                   <p className="text-slate-600">
-                    Detailed analysis and interpretation with practical guidance
-                    for your life journey.
+                    {t("included.items.3.description")}
                   </p>
                 </div>
               </div>
@@ -197,6 +179,7 @@ export default function AstrologyPage() {
 
             {/* Right Content - Sample Chart */}
             <div className="bg-white rounded-2xl p-8 shadow-lg">
+              {" "}
               <h3 className="text-2xl font-serif font-bold mb-6 text-slate-800 text-center">
                 Sample Birth Chart Analysis
               </h3>
@@ -208,17 +191,16 @@ export default function AstrologyPage() {
             </div>
           </div>
         </div>
-      </section>
-
+      </section>{" "}
       {/* Our Consultation Process */}
       <section className="py-20 text-white" style={{ background: "#280F43" }}>
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-white">
-              Our Consultation Process
+              {t("consultationProcess.title")}
             </h2>
             <p className="text-white/80 text-lg max-w-3xl mx-auto">
-              A structured approach to deliver accurate and meaningful insights
+              {t("consultationProcess.subtitle")}
             </p>
           </div>
 
@@ -235,10 +217,10 @@ export default function AstrologyPage() {
                 1
               </div>
               <h3 className="text-xl font-serif font-bold mb-4 text-white">
-                Birth Details Collection
+                {t("consultationProcess.steps.0").split("–")[0]}
               </h3>
               <p className="text-white/80 leading-relaxed">
-                Accurate birth date, time, and place for precise calculations
+                {t("consultationProcess.steps.0").split("–")[1]}
               </p>
             </div>
 
@@ -254,10 +236,10 @@ export default function AstrologyPage() {
                 2
               </div>
               <h3 className="text-xl font-serif font-bold mb-4 text-white">
-                Chart Preparation
+                {t("consultationProcess.steps.1").split("–")[0]}
               </h3>
               <p className="text-white/80 leading-relaxed">
-                Creating your detailed birth chart using traditional methods
+                {t("consultationProcess.steps.1").split("–")[1]}
               </p>
             </div>
 
@@ -273,10 +255,10 @@ export default function AstrologyPage() {
                 3
               </div>
               <h3 className="text-xl font-serif font-bold mb-4 text-white">
-                Analysis & Interpretation
+                {t("consultationProcess.steps.2").split("–")[0]}
               </h3>
               <p className="text-white/80 leading-relaxed">
-                Expert analysis of planetary positions and their influences
+                {t("consultationProcess.steps.2").split("–")[1]}
               </p>
             </div>
 
@@ -292,16 +274,15 @@ export default function AstrologyPage() {
                 4
               </div>
               <h3 className="text-xl font-serif font-bold mb-4 text-white">
-                Guidance & Remedies
+                {t("consultationProcess.steps.3").split("–")[0]}
               </h3>
               <p className="text-white/80 leading-relaxed">
-                Personalized guidance with remedial measures for enhancement
+                {t("consultationProcess.steps.3").split("–")[1]}
               </p>
             </div>
           </div>
         </div>
-      </section>
-
+      </section>{" "}
       {/* Benefits of Astrological Guidance */}
       <section
         className="py-20"
@@ -312,10 +293,10 @@ export default function AstrologyPage() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-slate-800">
-              Benefits of Astrological Guidance
+              {t("benefits.title")}
             </h2>
             <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-              Discover how cosmic wisdom can transform your life journey
+              {t("benefits.subtitle")}
             </p>
           </div>
 
@@ -326,7 +307,7 @@ export default function AstrologyPage() {
                 <Star className="w-8 h-8 text-rose-600" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Understand your life purpose and destiny
+                {t("benefits.items.0")}
               </h3>
             </div>
 
@@ -336,7 +317,7 @@ export default function AstrologyPage() {
                 <Star className="w-8 h-8 text-rose-600" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Navigate challenging periods with confidence
+                {t("benefits.items.1")}
               </h3>
             </div>
 
@@ -346,7 +327,7 @@ export default function AstrologyPage() {
                 <Star className="w-8 h-8 text-rose-600" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Make informed decisions about career and relationships
+                {t("benefits.items.2")}
               </h3>
             </div>
 
@@ -356,7 +337,7 @@ export default function AstrologyPage() {
                 <Star className="w-8 h-8 text-rose-600" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Discover your natural talents and abilities
+                {t("benefits.items.3")}
               </h3>
             </div>
 
@@ -366,19 +347,18 @@ export default function AstrologyPage() {
                 <Star className="w-8 h-8 text-rose-600" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Find the best timing for important life events
+                {t("benefits.items.4")}
               </h3>
             </div>
           </div>
         </div>
-      </section>
-
+      </section>{" "}
       <CosmicCTA
-        title="Ready to Discover Your Cosmic Blueprint?"
-        description="Unlock the wisdom of your birth chart and gain profound insights into your life's purpose, challenges, and opportunities."
+        title={t("cta.title")}
+        description={t("cta.description")}
         button={{
-          label: "Book Your Palmistry Reading",
-          action: { type: "link", href: "/book-appointment" },
+          label: t("cta.buttonLabel"),
+          action: { type: "link", href: t("cta.buttonLink") },
         }}
       />
     </>

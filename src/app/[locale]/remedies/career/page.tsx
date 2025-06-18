@@ -1,9 +1,20 @@
 import CosmicCTA from "@/components/common/common-cta";
-import { Heart, Star, Users, Baby, CheckCircle } from "lucide-react";
+import {
+  ArrowRight,
+  Briefcase,
+  Building,
+  CheckCircle,
+  Target,
+  TrendingUp,
+  Users,
+} from "lucide-react";
+import { useTranslations } from "next-intl";
 
-export default function MarriageProgenyPage() {
+export default function CareerPage() {
+  const t = useTranslations("remedies.career");
   return (
     <>
+      {" "}
       {/* Hero Section */}
       <section
         className="py-20 text-center"
@@ -20,28 +31,25 @@ export default function MarriageProgenyPage() {
                 color: "#DAB1AE",
               }}
             >
-              <Heart className="w-4 h-4 mr-2" />
-              Marriage & Family
+              <Briefcase className="w-4 h-4 mr-2" />
+              {t("hero.badge")}
             </span>
           </div>
           <h1
             className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6"
             style={{ color: "#DAB1AE" }}
           >
-            Blissful Marriage & Divine Progeny
+            {t("hero.title")}
           </h1>
           <p
             className="text-xl md:text-2xl mb-8 leading-relaxed max-w-4xl mx-auto"
             style={{ color: "#DAB1AE", opacity: 0.9 }}
           >
-            Find your life partner, strengthen marital bonds, and receive divine
-            blessings for progeny through powerful Vedic remedies and ancient
-            wisdom.
+            {t("hero.subtitle")}
           </p>
         </div>
       </section>
-
-      {/* Marriage & Progeny Benefits */}
+      {/* Career Benefits */}
       <section
         className="py-20"
         style={{
@@ -49,23 +57,23 @@ export default function MarriageProgenyPage() {
         }}
       >
         <div className="container mx-auto px-4 max-w-7xl">
+          {" "}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-slate-800">
-              Marriage & Progeny Benefits
+              {t("benefits.title")}
             </h2>
             <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-              Transform your relationship journey through cosmic guidance
+              {t("benefits.subtitle")}
             </p>
           </div>
-
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {/* Benefit 1 */}
             <div className="text-center bg-white rounded-2xl p-8 shadow-lg">
               <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <CheckCircle className="w-8 h-8 text-rose-400" />
-              </div>
+              </div>{" "}
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Overcome delays in marriage
+                {t("benefits.items.0")}
               </h3>
             </div>
 
@@ -75,7 +83,7 @@ export default function MarriageProgenyPage() {
                 <CheckCircle className="w-8 h-8 text-rose-400" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Improve relationship compatibility
+                {t("benefits.items.1")}
               </h3>
             </div>
 
@@ -85,7 +93,7 @@ export default function MarriageProgenyPage() {
                 <CheckCircle className="w-8 h-8 text-rose-400" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Resolve family conflicts
+                {t("benefits.items.2")}
               </h3>
             </div>
 
@@ -93,9 +101,9 @@ export default function MarriageProgenyPage() {
             <div className="text-center bg-white rounded-2xl p-8 shadow-lg">
               <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <CheckCircle className="w-8 h-8 text-rose-400" />
-              </div>
+              </div>{" "}
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Enhance fertility and conception
+                {t("benefits.items.3")}
               </h3>
             </div>
 
@@ -105,7 +113,7 @@ export default function MarriageProgenyPage() {
                 <CheckCircle className="w-8 h-8 text-rose-400" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Strengthen marital bonds
+                {t("benefits.items.4")}
               </h3>
             </div>
 
@@ -115,98 +123,336 @@ export default function MarriageProgenyPage() {
                 <CheckCircle className="w-8 h-8 text-rose-400" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Remove obstacles in love life
+                {t("benefits.items.5")}
               </h3>
             </div>
           </div>
         </div>
       </section>
+      {/* Career Remedies */}
+      <section className="py-20 text-white" style={{ background: "#280F43" }}>
+        <div className="container mx-auto px-4 max-w-7xl">
+          {" "}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-white">
+              {t("remedies.title")}
+            </h2>
+            <p className="text-white/80 text-lg max-w-3xl mx-auto">
+              {t("remedies.subtitle")}
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* Career Enhancement Rituals */}
+            <div
+              className="rounded-2xl p-8 text-center"
+              style={{ background: "#382144" }}
+            >
+              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                <Briefcase className="w-8 h-8 text-white" />
+              </div>{" "}
+              <h3 className="text-2xl font-serif font-bold mb-4 text-white">
+                {t("remedies.items.0.title")}
+              </h3>
+              <p className="text-white/80 leading-relaxed">
+                {t("remedies.items.0.description")}
+              </p>
+            </div>
+            {/* Success Mantras */}
+            <div
+              className="rounded-2xl p-8 text-center"
+              style={{ background: "#382144" }}
+            >
+              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                <TrendingUp className="w-8 h-8 text-white" />
+              </div>{" "}
+              <h3 className="text-2xl font-serif font-bold mb-4 text-white">
+                {t("remedies.items.1.title")}
+              </h3>
+              <p className="text-white/80 leading-relaxed">
+                {t("remedies.items.1.description")}
+              </p>
+            </div>{" "}
+            {/* Business Remedies */}
+            <div
+              className="rounded-2xl p-8 text-center"
+              style={{ background: "#382144" }}
+            >
+              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                <Building className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-serif font-bold mb-4 text-white">
+                {t("remedies.items.2.title")}
+              </h3>
+              <p className="text-white/80 leading-relaxed">
+                {t("remedies.items.2.description")}
+              </p>
+            </div>
+            {/* Recognition Therapy */}
+            <div
+              className="rounded-2xl p-8 text-center"
+              style={{ background: "#382144" }}
+            >
+              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                <Target className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-serif font-bold mb-4 text-white">
+                {t("remedies.items.3.title")}
+              </h3>
+              <p className="text-white/80 leading-relaxed">
+                {t("remedies.items.3.description")}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>{" "}
+      {/* Career Specializations */}
+      <section
+        className="py-20"
+        style={{
+          background: `linear-gradient(135deg, #E2BCB9 0%, #FBF5F4 100%)`,
+        }}
+      >
+        <div className="container mx-auto px-4 max-w-7xl">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-slate-800">
+              {t("specializations.title")}
+            </h2>
+            <p className="text-slate-600 text-lg max-w-3xl mx-auto">
+              {t("specializations.subtitle")}
+            </p>
+          </div>
 
-      {/* Marriage & Progeny Remedies */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {" "}
+            {/* Job Seekers */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <div className="flex items-center mb-4">
+                <Target className="w-6 h-6 text-rose-400 mr-3" />
+                <h3 className="text-2xl font-serif font-bold text-slate-800">
+                  {t("specializations.categories.0.title")}
+                </h3>
+              </div>
+              <p className="text-slate-600 mb-6 leading-relaxed">
+                {t("specializations.categories.0.description")}
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-center text-slate-600">
+                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
+                  {t("specializations.categories.0.features.0")}
+                </li>
+                <li className="flex items-center text-slate-600">
+                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
+                  {t("specializations.categories.0.features.1")}
+                </li>
+                <li className="flex items-center text-slate-600">
+                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
+                  {t("specializations.categories.0.features.2")}
+                </li>
+              </ul>
+            </div>
+            {/* Corporate Professionals */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <div className="flex items-center mb-4">
+                <Users className="w-6 h-6 text-rose-400 mr-3" />
+                <h3 className="text-2xl font-serif font-bold text-slate-800">
+                  {t("specializations.categories.1.title")}
+                </h3>
+              </div>
+              <p className="text-slate-600 mb-6 leading-relaxed">
+                {t("specializations.categories.1.description")}
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-center text-slate-600">
+                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
+                  {t("specializations.categories.1.features.0")}
+                </li>
+                <li className="flex items-center text-slate-600">
+                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
+                  {t("specializations.categories.1.features.1")}
+                </li>
+                <li className="flex items-center text-slate-600">
+                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
+                  {t("specializations.categories.1.features.2")}
+                </li>
+              </ul>
+            </div>{" "}
+            {/* Entrepreneurs */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <div className="flex items-center mb-4">
+                <TrendingUp className="w-6 h-6 text-rose-400 mr-3" />
+                <h3 className="text-2xl font-serif font-bold text-slate-800">
+                  {t("specializations.categories.2.title")}
+                </h3>
+              </div>
+              <p className="text-slate-600 mb-6 leading-relaxed">
+                {t("specializations.categories.2.description")}
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-center text-slate-600">
+                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
+                  {t("specializations.categories.2.features.0")}
+                </li>
+                <li className="flex items-center text-slate-600">
+                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
+                  {t("specializations.categories.2.features.1")}
+                </li>
+                <li className="flex items-center text-slate-600">
+                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
+                  {t("specializations.categories.2.features.2")}
+                </li>
+              </ul>
+            </div>
+            {/* Career Transition */}
+            <div className="bg-white rounded-2xl p-8 shadow-lg">
+              <div className="flex items-center mb-4">
+                <ArrowRight className="w-6 h-6 text-rose-400 mr-3" />
+                <h3 className="text-2xl font-serif font-bold text-slate-800">
+                  {t("specializations.categories.3.title")}
+                </h3>
+              </div>
+              <p className="text-slate-600 mb-6 leading-relaxed">
+                {t("specializations.categories.3.description")}
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-center text-slate-600">
+                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
+                  {t("specializations.categories.3.features.0")}
+                </li>
+                <li className="flex items-center text-slate-600">
+                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
+                  {t("specializations.categories.3.features.1")}
+                </li>
+                <li className="flex items-center text-slate-600">
+                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
+                  {t("specializations.categories.3.features.2")}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>{" "}
+      {/* Planetary Career Influences */}
       <section className="py-20 text-white" style={{ background: "#280F43" }}>
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-white">
-              Marriage & Progeny Remedies
+              {t("planetaryInfluences.title")}
             </h2>
             <p className="text-white/80 text-lg max-w-3xl mx-auto">
-              Sacred solutions for love, marriage, and family
+              {t("planetaryInfluences.subtitle")}
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {/* Vedic Rituals */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {" "}
+            {/* Sun */}
             <div
-              className="rounded-2xl p-8 text-center"
+              className="rounded-2xl p-6 text-center"
               style={{ background: "#382144" }}
             >
-              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                <Star className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-serif font-bold mb-4 text-white">
-                Vedic Rituals
+              <h3 className="text-xl font-serif font-bold mb-3 text-white">
+                {t("planetaryInfluences.planets.0.name")}
               </h3>
-              <p className="text-white/80 leading-relaxed">
-                Specific pujas and ceremonies to invoke divine blessings for
-                marriage and progeny.
+              <p className="text-white/80 text-sm mb-4">
+                {t("planetaryInfluences.planets.0.areas")}
               </p>
+              <ul className="text-white/70 text-sm space-y-1">
+                <li>• {t("planetaryInfluences.planets.0.remedies.0")}</li>
+                <li>• {t("planetaryInfluences.planets.0.remedies.1")}</li>
+                <li>• {t("planetaryInfluences.planets.0.remedies.2")}</li>
+              </ul>
             </div>
-
-            {/* Gemstone Therapy */}
+            {/* Moon */}
             <div
-              className="rounded-2xl p-8 text-center"
+              className="rounded-2xl p-6 text-center"
               style={{ background: "#382144" }}
             >
-              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                <Heart className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-serif font-bold mb-4 text-white">
-                Gemstone Therapy
+              <h3 className="text-xl font-serif font-bold mb-3 text-white">
+                {t("planetaryInfluences.planets.1.name")}
               </h3>
-              <p className="text-white/80 leading-relaxed">
-                Wearing specific gemstones to strengthen Venus and enhance love
-                relationships.
+              <p className="text-white/80 text-sm mb-4">
+                {t("planetaryInfluences.planets.1.areas")}
               </p>
+              <ul className="text-white/70 text-sm space-y-1">
+                <li>• {t("planetaryInfluences.planets.1.remedies.0")}</li>
+                <li>• {t("planetaryInfluences.planets.1.remedies.1")}</li>
+                <li>• {t("planetaryInfluences.planets.1.remedies.2")}</li>
+              </ul>
+            </div>{" "}
+            {/* Mars */}
+            <div
+              className="rounded-2xl p-6 text-center"
+              style={{ background: "#382144" }}
+            >
+              <h3 className="text-xl font-serif font-bold mb-3 text-white">
+                {t("planetaryInfluences.planets.2.name")}
+              </h3>
+              <p className="text-white/80 text-sm mb-4">
+                {t("planetaryInfluences.planets.2.areas")}
+              </p>
+              <ul className="text-white/70 text-sm space-y-1">
+                <li>• {t("planetaryInfluences.planets.2.remedies.0")}</li>
+                <li>• {t("planetaryInfluences.planets.2.remedies.1")}</li>
+                <li>• {t("planetaryInfluences.planets.2.remedies.2")}</li>
+              </ul>
             </div>
-
-            {/* Mantra Chanting */}
+            {/* Mercury */}
             <div
-              className="rounded-2xl p-8 text-center"
+              className="rounded-2xl p-6 text-center"
               style={{ background: "#382144" }}
             >
-              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                <Users className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-serif font-bold mb-4 text-white">
-                Mantra Chanting
+              <h3 className="text-xl font-serif font-bold mb-3 text-white">
+                {t("planetaryInfluences.planets.3.name")}
               </h3>
-              <p className="text-white/80 leading-relaxed">
-                Powerful mantras to remove obstacles and attract the right life
-                partner.
+              <p className="text-white/80 text-sm mb-4">
+                {t("planetaryInfluences.planets.3.areas")}
               </p>
+              <ul className="text-white/70 text-sm space-y-1">
+                <li>• {t("planetaryInfluences.planets.3.remedies.0")}</li>
+                <li>• {t("planetaryInfluences.planets.3.remedies.1")}</li>
+                <li>• {t("planetaryInfluences.planets.3.remedies.2")}</li>
+              </ul>
             </div>
-
-            {/* Fertility Enhancing */}
+            {/* Jupiter */}
             <div
-              className="rounded-2xl p-8 text-center"
+              className="rounded-2xl p-6 text-center"
               style={{ background: "#382144" }}
             >
-              <div className="w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                <Baby className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-serif font-bold mb-4 text-white">
-                Fertility Enhancing
+              <h3 className="text-xl font-serif font-bold mb-3 text-white">
+                {t("planetaryInfluences.planets.4.name")}
               </h3>
-              <p className="text-white/80 leading-relaxed">
-                Special remedies and practices to overcome conception
-                difficulties and bless with children.
+              <p className="text-white/80 text-sm mb-4">
+                {t("planetaryInfluences.planets.4.areas")}
               </p>
+              <ul className="text-white/70 text-sm space-y-1">
+                <li>• {t("planetaryInfluences.planets.4.remedies.0")}</li>
+                <li>• {t("planetaryInfluences.planets.4.remedies.1")}</li>
+                <li>• {t("planetaryInfluences.planets.4.remedies.2")}</li>
+              </ul>
+            </div>
+            {/* Venus */}
+            <div
+              className="rounded-2xl p-6 text-center"
+              style={{ background: "#382144" }}
+            >
+              <h3 className="text-xl font-serif font-bold mb-3 text-white">
+                {t("planetaryInfluences.planets.5.name")}
+              </h3>
+              <p className="text-white/80 text-sm mb-4">
+                {t("planetaryInfluences.planets.5.areas")}
+              </p>
+              <ul className="text-white/70 text-sm space-y-1">
+                <li>• {t("planetaryInfluences.planets.5.remedies.0")}</li>
+                <li>• {t("planetaryInfluences.planets.5.remedies.1")}</li>
+                {t("planetaryInfluences.planets.5.remedies.2") && (
+                  <li>• {t("planetaryInfluences.planets.5.remedies.2")}</li>
+                )}
+              </ul>
             </div>
           </div>
         </div>
-      </section>
-
-      {/* Specialized Areas */}
+      </section>{" "}
+      {/* Our Career Consultation Process */}
       <section
         className="py-20"
         style={{
@@ -216,131 +462,10 @@ export default function MarriageProgenyPage() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-slate-800">
-              Specialized Areas
+              {t("consultationProcess.title")}
             </h2>
             <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-              Comprehensive support for all relationship aspects
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-            {/* Marriage Timing */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-serif font-bold mb-4 text-slate-800">
-                Marriage Timing
-              </h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Find the most auspicious time for marriage through careful
-                astrological analysis.
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-center text-slate-600">
-                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Muhurat selection
-                </li>
-                <li className="flex items-center text-slate-600">
-                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Planetary alignment
-                </li>
-                <li className="flex items-center text-slate-600">
-                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Compatible timing
-                </li>
-              </ul>
-            </div>
-
-            {/* Partner Compatibility */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-serif font-bold mb-4 text-slate-800">
-                Partner Compatibility
-              </h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Assess compatibility between partners for a harmonious married
-                life.
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-center text-slate-600">
-                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Kundali matching
-                </li>
-                <li className="flex items-center text-slate-600">
-                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Guna Milan analysis
-                </li>
-                <li className="flex items-center text-slate-600">
-                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Manglik considerations
-                </li>
-              </ul>
-            </div>
-
-            {/* Relationship Issues */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-serif font-bold mb-4 text-slate-800">
-                Relationship Issues
-              </h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Resolve conflicts and strengthen bonds between partners and
-                families.
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-center text-slate-600">
-                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Communication remedies
-                </li>
-                <li className="flex items-center text-slate-600">
-                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Trust building practices
-                </li>
-                <li className="flex items-center text-slate-600">
-                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Family harmony rituals
-                </li>
-              </ul>
-            </div>
-
-            {/* Progeny Concerns */}
-            <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-serif font-bold mb-4 text-slate-800">
-                Progeny Concerns
-              </h3>
-              <p className="text-slate-600 mb-6 leading-relaxed">
-                Address fertility issues and bless couples with healthy
-                children.
-              </p>
-              <ul className="space-y-3">
-                <li className="flex items-center text-slate-600">
-                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Fertility enhancement
-                </li>
-                <li className="flex items-center text-slate-600">
-                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Conception timing
-                </li>
-                <li className="flex items-center text-slate-600">
-                  <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Child health protection
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Our Consultation Process */}
-      <section
-        className="py-20"
-        style={{
-          background: `linear-gradient(135deg, #E2BCB9 0%, #FBF5F4 100%)`,
-        }}
-      >
-        <div className="container mx-auto px-4 max-w-7xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-slate-800">
-              Our Consultation Process
-            </h2>
-            <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-              Step-by-step guidance for your relationship journey
+              {t("consultationProcess.subtitle")}
             </p>
           </div>
 
@@ -358,8 +483,7 @@ export default function MarriageProgenyPage() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">
-                  Detailed birth chart analysis for marriage and progeny
-                  prospects
+                  {t("consultationProcess.steps.0")}
                 </h3>
               </div>
             </div>
@@ -377,7 +501,7 @@ export default function MarriageProgenyPage() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">
-                  Assessment of planetary influences affecting relationships
+                  {t("consultationProcess.steps.1")}
                 </h3>
               </div>
             </div>
@@ -395,8 +519,7 @@ export default function MarriageProgenyPage() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">
-                  Customized remedial plan including mantras, gemstones, and
-                  rituals
+                  {t("consultationProcess.steps.2")}
                 </h3>
               </div>
             </div>
@@ -414,7 +537,7 @@ export default function MarriageProgenyPage() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">
-                  Guidance on timing for marriage ceremonies and conception
+                  {t("consultationProcess.steps.3")}
                 </h3>
               </div>
             </div>
@@ -432,20 +555,37 @@ export default function MarriageProgenyPage() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">
-                  Ongoing support throughout your relationship journey
+                  {t("consultationProcess.steps.4")}
+                </h3>
+              </div>
+            </div>
+
+            {/* Step 6 */}
+            <div className="flex items-start space-x-6">
+              <div
+                className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg flex-shrink-0"
+                style={{
+                  background:
+                    "linear-gradient(135deg, #D2A7A8 0%, #8A5570 100%)",
+                }}
+              >
+                6
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-slate-800 mb-2">
+                  {t("consultationProcess.steps.5")}
                 </h3>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
+      </section>{" "}
       <CosmicCTA
-        title="Ready to Find Your Soulmate?"
-        description="Take the first step towards a blissful marriage and divine progeny with our personalized astrological guidance and sacred remedies."
+        title={t("cta.title")}
+        description={t("cta.description")}
         button={{
-          label: "Book Marriage Consultation",
-          action: { type: "link", href: "/book-appointment" },
+          label: t("cta.buttonLabel"),
+          action: { type: "link", href: t("cta.buttonLink") },
         }}
       />
     </>

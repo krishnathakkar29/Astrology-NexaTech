@@ -9,10 +9,16 @@ import {
   Moon,
   AlertTriangle,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "@/components/common/language-switcher";
 
 export default function MuhuratTimingsPage() {
+  const t = useTranslations("remedies.muhuratTimings");
   return (
     <>
+      <div className="flex justify-end p-4">
+        <LanguageSwitcher />
+      </div>
       {/* Hero Section */}
       <section
         className="py-20 text-center"
@@ -29,27 +35,25 @@ export default function MuhuratTimingsPage() {
                 color: "#DAB1AE",
               }}
             >
+              {" "}
               <Clock className="w-4 h-4 mr-2" />
-              Muhurat & Timings
+              {t("hero.badge")}
             </span>
           </div>
           <h1
             className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6"
             style={{ color: "#DAB1AE" }}
           >
-            Perfect Timing for Life's Important Moments
+            {t("hero.title")}
           </h1>
           <p
             className="text-xl md:text-2xl mb-8 leading-relaxed max-w-4xl mx-auto"
             style={{ color: "#DAB1AE", opacity: 0.9 }}
           >
-            Align your important life events with cosmic energies through
-            precise muhurat calculations and auspicious timing selection for
-            maximum success and prosperity.
+            {t("hero.subtitle")}
           </p>
         </div>
       </section>
-
       {/* Muhurat Benefits */}
       <section
         className="py-20"
@@ -59,11 +63,12 @@ export default function MuhuratTimingsPage() {
       >
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
+            {" "}
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-slate-800">
-              Muhurat Benefits
+              {t("benefits.title")}
             </h2>
             <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-              Harness cosmic timing for life's most important moments
+              {t("benefits.subtitle")}
             </p>
           </div>
 
@@ -72,9 +77,9 @@ export default function MuhuratTimingsPage() {
             <div className="text-center bg-white rounded-2xl p-8 shadow-lg">
               <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <CheckCircle className="w-8 h-8 text-rose-400" />
-              </div>
+              </div>{" "}
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Choose auspicious timing for important events
+                {t("benefits.items.0")}
               </h3>
             </div>
 
@@ -84,7 +89,7 @@ export default function MuhuratTimingsPage() {
                 <CheckCircle className="w-8 h-8 text-rose-400" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Maximize success probability
+                {t("benefits.items.1")}
               </h3>
             </div>
 
@@ -94,7 +99,7 @@ export default function MuhuratTimingsPage() {
                 <CheckCircle className="w-8 h-8 text-rose-400" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Align with cosmic energies
+                {t("benefits.items.2")}
               </h3>
             </div>
 
@@ -104,7 +109,7 @@ export default function MuhuratTimingsPage() {
                 <CheckCircle className="w-8 h-8 text-rose-400" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Avoid inauspicious periods
+                {t("benefits.items.3")}
               </h3>
             </div>
 
@@ -114,7 +119,7 @@ export default function MuhuratTimingsPage() {
                 <CheckCircle className="w-8 h-8 text-rose-400" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Enhance positive outcomes
+                {t("benefits.items.4")}
               </h3>
             </div>
 
@@ -124,22 +129,22 @@ export default function MuhuratTimingsPage() {
                 <CheckCircle className="w-8 h-8 text-rose-400" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Create harmonious beginnings
+                {t("benefits.items.5")}
               </h3>
             </div>
           </div>
         </div>
       </section>
-
       {/* Types of Muhurat */}
       <section className="py-20 text-white" style={{ background: "#280F43" }}>
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
+            {" "}
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-white">
-              Types of Muhurat
+              {t("types.title")}
             </h2>
             <p className="text-white/80 text-lg max-w-3xl mx-auto">
-              Specialized timing for every important occasion
+              {t("types.subtitle")}
             </p>
           </div>
 
@@ -147,22 +152,21 @@ export default function MuhuratTimingsPage() {
             {/* Wedding Muhurat */}
             <div className="rounded-2xl p-8" style={{ background: "#382144" }}>
               <div className="flex items-center mb-4">
-                <Star className="w-6 h-6 text-white mr-3" />
+                <Star className="w-6 h-6 text-white mr-3" />{" "}
                 <h3 className="text-2xl font-serif font-bold text-white">
-                  Wedding Muhurat
+                  {t("types.items.0.title")}
                 </h3>
               </div>
               <p className="text-white/80 mb-6 leading-relaxed">
-                Perfect timing for marriage ceremonies to ensure lifelong
-                happiness and prosperity.
+                {t("types.items.0.description")}
               </p>
               <div className="mb-4">
                 <h4 className="text-white font-semibold mb-2">Perfect for:</h4>
                 <ul className="text-white/70 space-y-1">
-                  <li>• Wedding ceremony</li>
-                  <li>• Engagement</li>
-                  <li>• Ring ceremony</li>
-                  <li>• Reception</li>
+                  <li>• {t("types.items.0.perfectFor.0")}</li>
+                  <li>• {t("types.items.0.perfectFor.1")}</li>
+                  <li>• {t("types.items.0.perfectFor.2")}</li>
+                  <li>• {t("types.items.0.perfectFor.3")}</li>
                 </ul>
               </div>
             </div>
@@ -172,20 +176,19 @@ export default function MuhuratTimingsPage() {
               <div className="flex items-center mb-4">
                 <Calendar className="w-6 h-6 text-white mr-3" />
                 <h3 className="text-2xl font-serif font-bold text-white">
-                  Business Muhurat
+                  {t("types.items.1.title")}
                 </h3>
               </div>
               <p className="text-white/80 mb-6 leading-relaxed">
-                Auspicious timing for business ventures, office inauguration,
-                and financial decisions.
+                {t("types.items.1.description")}
               </p>
               <div className="mb-4">
                 <h4 className="text-white font-semibold mb-2">Perfect for:</h4>
                 <ul className="text-white/70 space-y-1">
-                  <li>• Business launch</li>
-                  <li>• Office opening</li>
-                  <li>• Partnership</li>
-                  <li>• Investment decisions</li>
+                  <li>• {t("types.items.1.perfectFor.0")}</li>
+                  <li>• {t("types.items.1.perfectFor.1")}</li>
+                  <li>• {t("types.items.1.perfectFor.2")}</li>
+                  <li>• {t("types.items.1.perfectFor.3")}</li>
                 </ul>
               </div>
             </div>
@@ -193,22 +196,21 @@ export default function MuhuratTimingsPage() {
             {/* Spiritual Muhurat */}
             <div className="rounded-2xl p-8" style={{ background: "#382144" }}>
               <div className="flex items-center mb-4">
-                <Sun className="w-6 h-6 text-white mr-3" />
+                <Sun className="w-6 h-6 text-white mr-3" />{" "}
                 <h3 className="text-2xl font-serif font-bold text-white">
-                  Spiritual Muhurat
+                  {t("types.items.2.title")}
                 </h3>
               </div>
               <p className="text-white/80 mb-6 leading-relaxed">
-                Sacred timing for religious ceremonies, temple visits, and
-                spiritual practices.
+                {t("types.items.2.description")}
               </p>
               <div className="mb-4">
                 <h4 className="text-white font-semibold mb-2">Perfect for:</h4>
                 <ul className="text-white/70 space-y-1">
-                  <li>• Pooja ceremonies</li>
-                  <li>• Temple visits</li>
-                  <li>• Spiritual initiations</li>
-                  <li>• Religious festivals</li>
+                  <li>• {t("types.items.2.perfectFor.0")}</li>
+                  <li>• {t("types.items.2.perfectFor.1")}</li>
+                  <li>• {t("types.items.2.perfectFor.2")}</li>
+                  <li>• {t("types.items.2.perfectFor.3")}</li>
                 </ul>
               </div>
             </div>
@@ -218,27 +220,25 @@ export default function MuhuratTimingsPage() {
               <div className="flex items-center mb-4">
                 <Moon className="w-6 h-6 text-white mr-3" />
                 <h3 className="text-2xl font-serif font-bold text-white">
-                  Personal Muhurat
+                  {t("types.items.3.title")}
                 </h3>
               </div>
               <p className="text-white/80 mb-6 leading-relaxed">
-                Favorable timing for personal milestones and important life
-                decisions.
+                {t("types.items.3.description")}
               </p>
               <div className="mb-4">
                 <h4 className="text-white font-semibold mb-2">Perfect for:</h4>
                 <ul className="text-white/70 space-y-1">
-                  <li>• House warming</li>
-                  <li>• Vehicle purchase</li>
-                  <li>• Education start</li>
-                  <li>• Travel planning</li>
+                  <li>• {t("types.items.3.perfectFor.0")}</li>
+                  <li>• {t("types.items.3.perfectFor.1")}</li>
+                  <li>• {t("types.items.3.perfectFor.2")}</li>
+                  <li>• {t("types.items.3.perfectFor.3")}</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       {/* Timing Considerations */}
       <section
         className="py-20"
@@ -248,36 +248,37 @@ export default function MuhuratTimingsPage() {
       >
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
+            {" "}
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-slate-800">
-              Timing Considerations
+              {t("timingConsiderations.title")}
             </h2>
             <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-              Factors analyzed for perfect muhurat selection
+              {t("timingConsiderations.subtitle")}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {/* Planetary Positions */}
             <div className="bg-white rounded-2xl p-8 shadow-lg">
+              {" "}
               <h3 className="text-2xl font-serif font-bold mb-4 text-slate-800">
-                Planetary Positions
+                {t("timingConsiderations.items.0.title")}
               </h3>
               <p className="text-slate-600 mb-6 leading-relaxed">
-                Analysis of favorable planetary alignments and their influence
-                on success.
+                {t("timingConsiderations.items.0.description")}
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Beneficial planet positions
+                  {t("timingConsiderations.items.0.features.0")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Avoiding malefic influences
+                  {t("timingConsiderations.items.0.features.1")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Strength of ascendant
+                  {t("timingConsiderations.items.0.features.2")}
                 </li>
               </ul>
             </div>
@@ -285,23 +286,23 @@ export default function MuhuratTimingsPage() {
             {/* Lunar Calendar */}
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-serif font-bold mb-4 text-slate-800">
-                Lunar Calendar
+                {t("timingConsiderations.items.1.title")}
               </h3>
               <p className="text-slate-600 mb-6 leading-relaxed">
-                Consideration of moon phases and lunar days for optimal timing.
+                {t("timingConsiderations.items.1.description")}
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Waxing vs waning moon
+                  {t("timingConsiderations.items.1.features.0")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Tithi calculations
+                  {t("timingConsiderations.items.1.features.1")}{" "}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Lunar mansion influence
+                  {t("timingConsiderations.items.1.features.2")}
                 </li>
               </ul>
             </div>
@@ -309,24 +310,23 @@ export default function MuhuratTimingsPage() {
             {/* Nakshatra Analysis */}
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-serif font-bold mb-4 text-slate-800">
-                Nakshatra Analysis
+                {t("timingConsiderations.items.2.title")}
               </h3>
               <p className="text-slate-600 mb-6 leading-relaxed">
-                Selection based on favorable star constellations and their
-                energies.
+                {t("timingConsiderations.items.2.description")}
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Ruling deity influence
+                  {t("timingConsiderations.items.2.features.0")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Constellation compatibility
+                  {t("timingConsiderations.items.2.features.1")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Star-based predictions
+                  {t("timingConsiderations.items.2.features.2")}
                 </li>
               </ul>
             </div>
@@ -334,40 +334,39 @@ export default function MuhuratTimingsPage() {
             {/* Weekday Selection */}
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-serif font-bold mb-4 text-slate-800">
-                Weekday Selection
+                {t("timingConsiderations.items.3.title")}
               </h3>
               <p className="text-slate-600 mb-6 leading-relaxed">
-                Choosing the most auspicious day of the week for specific
-                activities.
+                {t("timingConsiderations.items.3.description")}
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Planetary day rulers
+                  {t("timingConsiderations.items.3.features.0")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Activity-specific days
+                  {t("timingConsiderations.items.3.features.1")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Personal compatibility
+                  {t("timingConsiderations.items.3.features.2")}
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
-
       {/* Periods to Avoid */}
       <section className="py-20 text-white" style={{ background: "#280F43" }}>
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
+            {" "}
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-white">
-              Periods to Avoid
+              {t("periodsToAvoid.title")}
             </h2>
             <p className="text-white/80 text-lg max-w-3xl mx-auto">
-              Inauspicious timings that should be avoided
+              {t("periodsToAvoid.subtitle")}
             </p>
           </div>
 
@@ -378,26 +377,30 @@ export default function MuhuratTimingsPage() {
               style={{ background: "#382144" }}
             >
               <div className="flex items-center mb-4">
-                <AlertTriangle className="w-6 h-6 text-red-400 mr-3" />
+                <AlertTriangle className="w-6 h-6 text-red-400 mr-3" />{" "}
                 <h3 className="text-xl font-serif font-bold text-white">
-                  Rahu Kaal
+                  {t("periodsToAvoid.items.0.title")}
                 </h3>
               </div>
               <p className="text-white/80 text-sm mb-4">
-                Inauspicious time period ruled by shadow planet Rahu
+                {t("periodsToAvoid.items.0.description")}
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <h4 className="text-white font-semibold text-sm mb-1">
                     Duration:
                   </h4>
-                  <p className="text-white/70 text-sm">1.5 hours daily</p>
+                  <p className="text-white/70 text-sm">
+                    {t("periodsToAvoid.items.0.duration")}
+                  </p>
                 </div>
                 <div>
                   <h4 className="text-white font-semibold text-sm mb-1">
                     Impact:
                   </h4>
-                  <p className="text-white/70 text-sm">Delays and obstacles</p>
+                  <p className="text-white/70 text-sm">
+                    {t("periodsToAvoid.items.0.impact")}
+                  </p>
                 </div>
               </div>
             </div>
@@ -410,25 +413,28 @@ export default function MuhuratTimingsPage() {
               <div className="flex items-center mb-4">
                 <AlertTriangle className="w-6 h-6 text-red-400 mr-3" />
                 <h3 className="text-xl font-serif font-bold text-white">
-                  Yamaganda Kaal
+                  {t("periodsToAvoid.items.1.title")}
                 </h3>
               </div>
               <p className="text-white/80 text-sm mb-4">
-                Period associated with death deity, unfavorable for new
-                beginnings
+                {t("periodsToAvoid.items.1.description")}
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <h4 className="text-white font-semibold text-sm mb-1">
                     Duration:
                   </h4>
-                  <p className="text-white/70 text-sm">1.5 hours daily</p>
+                  <p className="text-white/70 text-sm">
+                    {t("periodsToAvoid.items.1.duration")}
+                  </p>
                 </div>
                 <div>
                   <h4 className="text-white font-semibold text-sm mb-1">
                     Impact:
                   </h4>
-                  <p className="text-white/70 text-sm">Negative outcomes</p>
+                  <p className="text-white/70 text-sm">
+                    {t("periodsToAvoid.items.1.impact")}
+                  </p>
                 </div>
               </div>
             </div>
@@ -439,26 +445,30 @@ export default function MuhuratTimingsPage() {
               style={{ background: "#382144" }}
             >
               <div className="flex items-center mb-4">
-                <AlertTriangle className="w-6 h-6 text-red-400 mr-3" />
+                <AlertTriangle className="w-6 h-6 text-red-400 mr-3" />{" "}
                 <h3 className="text-xl font-serif font-bold text-white">
-                  Gulika Kaal
+                  {t("periodsToAvoid.items.2.title")}
                 </h3>
               </div>
               <p className="text-white/80 text-sm mb-4">
-                Time influenced by malefic energies causing hindrances
+                {t("periodsToAvoid.items.2.description")}
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <h4 className="text-white font-semibold text-sm mb-1">
                     Duration:
                   </h4>
-                  <p className="text-white/70 text-sm">1.5 hours daily</p>
+                  <p className="text-white/70 text-sm">
+                    {t("periodsToAvoid.items.2.duration")}
+                  </p>
                 </div>
                 <div>
                   <h4 className="text-white font-semibold text-sm mb-1">
                     Impact:
                   </h4>
-                  <p className="text-white/70 text-sm">Financial losses</p>
+                  <p className="text-white/70 text-sm">
+                    {t("periodsToAvoid.items.2.impact")}
+                  </p>
                 </div>
               </div>
             </div>
@@ -471,31 +481,34 @@ export default function MuhuratTimingsPage() {
               <div className="flex items-center mb-4">
                 <AlertTriangle className="w-6 h-6 text-red-400 mr-3" />
                 <h3 className="text-xl font-serif font-bold text-white">
-                  Void of Course Moon
+                  {t("periodsToAvoid.items.3.title")}
                 </h3>
               </div>
               <p className="text-white/80 text-sm mb-4">
-                When moon makes no major aspects before changing signs
+                {t("periodsToAvoid.items.3.description")}
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <h4 className="text-white font-semibold text-sm mb-1">
                     Duration:
                   </h4>
-                  <p className="text-white/70 text-sm">Variable</p>
+                  <p className="text-white/70 text-sm">
+                    {t("periodsToAvoid.items.3.duration")}
+                  </p>
                 </div>
                 <div>
                   <h4 className="text-white font-semibold text-sm mb-1">
                     Impact:
                   </h4>
-                  <p className="text-white/70 text-sm">Lack of progress</p>
+                  <p className="text-white/70 text-sm">
+                    {t("periodsToAvoid.items.3.impact")}
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       {/* Our Muhurat Consultation Process */}
       <section
         className="py-20"
@@ -505,11 +518,12 @@ export default function MuhuratTimingsPage() {
       >
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
+            {" "}
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-slate-800">
-              Our Muhurat Consultation Process
+              {t("consultationProcess.title")}
             </h2>
             <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-              Systematic approach to finding perfect timing
+              {t("consultationProcess.subtitle")}
             </p>
           </div>
 
@@ -526,8 +540,9 @@ export default function MuhuratTimingsPage() {
                 1
               </div>
               <div>
+                {" "}
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">
-                  Analysis of your birth chart and current planetary periods
+                  {t("consultationProcess.steps.0")}
                 </h3>
               </div>
             </div>
@@ -545,7 +560,7 @@ export default function MuhuratTimingsPage() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">
-                  Understanding the nature and importance of your planned event
+                  {t("consultationProcess.steps.1")}
                 </h3>
               </div>
             </div>
@@ -563,8 +578,7 @@ export default function MuhuratTimingsPage() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">
-                  Calculation of most favorable dates and times based on cosmic
-                  influences
+                  {t("consultationProcess.steps.2")}
                 </h3>
               </div>
             </div>
@@ -582,7 +596,7 @@ export default function MuhuratTimingsPage() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">
-                  Providing alternative dates in case of scheduling conflicts
+                  {t("consultationProcess.steps.3")}
                 </h3>
               </div>
             </div>
@@ -600,21 +614,19 @@ export default function MuhuratTimingsPage() {
               </div>
               <div>
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">
-                  Detailed timing recommendations with do's and don'ts for the
-                  occasion
+                  {t("consultationProcess.steps.4")}
                 </h3>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
+      </section>{" "}
       <CosmicCTA
-        title="Ready to Choose Perfect Timing?"
-        description="Ensure success in your important endeavors with precisely calculated muhurat timings based on ancient Vedic wisdom and cosmic alignments."
+        title={t("cta.title")}
+        description={t("cta.description")}
         button={{
-          label: "Book Muhurat Consultation",
-          action: { type: "link", href: "/book-appointment" },
+          label: t("cta.buttonLabel"),
+          action: { type: "link", href: t("cta.buttonLink") },
         }}
       />
     </>

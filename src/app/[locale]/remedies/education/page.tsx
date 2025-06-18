@@ -6,10 +6,16 @@ import {
   TrendingUp,
   CheckCircle,
 } from "lucide-react";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "@/components/common/language-switcher";
 
 function page() {
+  const t = useTranslations("remedies.education");
   return (
     <>
+      <div className="flex justify-end p-4">
+        <LanguageSwitcher />
+      </div>
       {/* Hero Section */}
       <section
         className="py-20 text-center"
@@ -27,26 +33,23 @@ function page() {
               }}
             >
               <GraduationCap className="w-4 h-4 mr-2" />
-              Educational Excellence
+              {t("hero.badge")}
             </span>
           </div>
           <h1
             className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-6"
             style={{ color: "#DAB1AE" }}
           >
-            Academic Success Through Ancient Wisdom
+            {t("hero.title")}
           </h1>
           <p
             className="text-xl md:text-2xl mb-8 leading-relaxed max-w-4xl mx-auto"
             style={{ color: "#DAB1AE", opacity: 0.9 }}
           >
-            Unlock your learning potential and achieve educational excellence
-            with time-tested astrological remedies designed to enhance
-            concentration, memory, and academic performance.
+            {t("hero.subtitle")}
           </p>
         </div>
-      </section>
-
+      </section>{" "}
       {/* Our Educational Consultation Process */}
       <section
         className="py-20"
@@ -57,10 +60,10 @@ function page() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-slate-800">
-              Our Educational Consultation Process
+              {t("consultationProcess.title")}
             </h2>
             <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-              Structured approach to academic success
+              {t("consultationProcess.subtitle")}
             </p>
           </div>
 
@@ -77,9 +80,9 @@ function page() {
                 1
               </div>
               <div>
+                {" "}
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">
-                  Educational chart analysis to identify learning patterns and
-                  obstacles
+                  {t("consultationProcess.steps.0")}
                 </h3>
               </div>
             </div>
@@ -96,8 +99,9 @@ function page() {
                 2
               </div>
               <div>
+                {" "}
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">
-                  Assessment of current academic challenges and goals
+                  {t("consultationProcess.steps.1")}
                 </h3>
               </div>
             </div>
@@ -114,8 +118,9 @@ function page() {
                 3
               </div>
               <div>
+                {" "}
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">
-                  Personalized remedy plan based on planetary influences
+                  {t("consultationProcess.steps.2")}
                 </h3>
               </div>
             </div>
@@ -132,8 +137,9 @@ function page() {
                 4
               </div>
               <div>
+                {" "}
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">
-                  Implementation of mantras, gemstones, and ritual practices
+                  {t("consultationProcess.steps.3")}
                 </h3>
               </div>
             </div>
@@ -150,16 +156,15 @@ function page() {
                 5
               </div>
               <div>
+                {" "}
                 <h3 className="text-xl font-semibold text-slate-800 mb-2">
-                  Ongoing support and guidance throughout the educational
-                  journey
+                  {t("consultationProcess.steps.4")}
                 </h3>
               </div>
             </div>
           </div>
         </div>
-      </section>
-
+      </section>{" "}
       {/* Areas of Expertise */}
       <section
         className="py-20"
@@ -170,130 +175,124 @@ function page() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-slate-800">
-              Areas of Expertise
+              {t("expertise.title")}
             </h2>
             <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-              Comprehensive educational support
+              {t("expertise.subtitle")}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {" "}
             {/* Academic Performance */}
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-serif font-bold mb-4 text-slate-800">
-                Academic Performance
+                {t("expertise.categories.0.title")}
               </h3>
               <p className="text-slate-600 mb-6 leading-relaxed">
-                Remedies for improving grades, concentration, and overall
-                academic excellence.
+                {t("expertise.categories.0.description")}
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Memory enhancement techniques
+                  {t("expertise.categories.0.features.0")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Focus improvement mantras
+                  {t("expertise.categories.0.features.1")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Study schedule optimization
+                  {t("expertise.categories.0.features.2")}
                 </li>
               </ul>
-            </div>
-
+            </div>{" "}
             {/* Competitive Exams */}
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-serif font-bold mb-4 text-slate-800">
-                Competitive Exams
+                {t("expertise.categories.1.title")}
               </h3>
               <p className="text-slate-600 mb-6 leading-relaxed">
-                Special guidance for entrance exams, competitive tests, and
-                professional certifications.
+                {t("expertise.categories.1.description")}
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Exam-specific remedies
+                  {t("expertise.categories.1.features.0")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Stress reduction techniques
+                  {t("expertise.categories.1.features.1")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Confidence building practices
+                  {t("expertise.categories.1.features.2")}
                 </li>
               </ul>
-            </div>
-
+            </div>{" "}
             {/* Higher Education */}
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-serif font-bold mb-4 text-slate-800">
-                Higher Education
+                {t("expertise.categories.2.title")}
               </h3>
               <p className="text-slate-600 mb-6 leading-relaxed">
-                Support for college admissions, research work, and advanced
-                studies abroad.
+                {t("expertise.categories.2.description")}
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  University selection guidance
+                  {t("expertise.categories.2.features.0")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Scholarship assistance
+                  {t("expertise.categories.2.features.1")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Research enhancement
+                  {t("expertise.categories.2.features.2")}
                 </li>
               </ul>
-            </div>
-
+            </div>{" "}
             {/* Career Transition */}
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <h3 className="text-2xl font-serif font-bold mb-4 text-slate-800">
-                Career Transition
+                {t("expertise.categories.3.title")}
               </h3>
               <p className="text-slate-600 mb-6 leading-relaxed">
-                Educational guidance for career changes and professional skill
-                development.
+                {t("expertise.categories.3.description")}
               </p>
               <ul className="space-y-3">
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Skill enhancement remedies
+                  {t("expertise.categories.3.features.0")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Career transition support
+                  {t("expertise.categories.3.features.1")}
                 </li>
                 <li className="flex items-center text-slate-600">
                   <div className="w-2 h-2 bg-rose-300 rounded-full mr-3"></div>
-                  Professional growth mantras
+                  {t("expertise.categories.3.features.2")}
                 </li>
               </ul>
             </div>
           </div>
         </div>
-      </section>
-
+      </section>{" "}
       {/* Educational Remedies */}
       <section className="py-20 text-white" style={{ background: "#280F43" }}>
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-white">
-              Educational Remedies
+              {t("remedies.title")}
             </h2>
             <p className="text-white/80 text-lg max-w-3xl mx-auto">
-              Powerful solutions for academic success
+              {t("remedies.subtitle")}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {" "}
             {/* Saraswati Puja */}
             <div
               className="rounded-2xl p-8 text-center"
@@ -303,14 +302,12 @@ function page() {
                 <GraduationCap className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-serif font-bold mb-4 text-white">
-                Saraswati Puja
+                {t("remedies.items.0.title")}
               </h3>
               <p className="text-white/80 leading-relaxed">
-                Special worship of Goddess Saraswati to enhance wisdom,
-                knowledge, and learning abilities.
+                {t("remedies.items.0.description")}
               </p>
-            </div>
-
+            </div>{" "}
             {/* Mercury Strengthening */}
             <div
               className="rounded-2xl p-8 text-center"
@@ -320,14 +317,12 @@ function page() {
                 <Target className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-serif font-bold mb-4 text-white">
-                Mercury Strengthening
+                {t("remedies.items.1.title")}
               </h3>
               <p className="text-white/80 leading-relaxed">
-                Remedies to strengthen Mercury planet for improved intellect and
-                communication skills.
+                {t("remedies.items.1.description")}
               </p>
-            </div>
-
+            </div>{" "}
             {/* Vidya Mantras */}
             <div
               className="rounded-2xl p-8 text-center"
@@ -337,14 +332,12 @@ function page() {
                 <BookOpen className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-serif font-bold mb-4 text-white">
-                Vidya Mantras
+                {t("remedies.items.2.title")}
               </h3>
               <p className="text-white/80 leading-relaxed">
-                Powerful educational mantras to remove obstacles in learning and
-                boost academic performance.
+                {t("remedies.items.2.description")}
               </p>
-            </div>
-
+            </div>{" "}
             {/* Success Rituals */}
             <div
               className="rounded-2xl p-8 text-center"
@@ -354,17 +347,15 @@ function page() {
                 <TrendingUp className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-serif font-bold mb-4 text-white">
-                Success Rituals
+                {t("remedies.items.3.title")}
               </h3>
               <p className="text-white/80 leading-relaxed">
-                Special ceremonies performed during auspicious times for
-                examination success and career growth.
+                {t("remedies.items.3.description")}
               </p>
             </div>
           </div>
         </div>
-      </section>
-
+      </section>{" "}
       {/* Educational Benefits */}
       <section
         className="py-20"
@@ -375,83 +366,78 @@ function page() {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4 text-slate-800">
-              Educational Benefits
+              {t("benefits.title")}
             </h2>
             <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-              Achieve academic excellence through ancient wisdom
+              {t("benefits.subtitle")}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {" "}
             {/* Benefit 1 */}
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <CheckCircle className="w-8 h-8 text-rose-400" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Improve concentration and memory
+                {t("benefits.items.0")}
               </h3>
             </div>
-
             {/* Benefit 2 */}
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <CheckCircle className="w-8 h-8 text-rose-400" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Overcome learning difficulties
+                {t("benefits.items.1")}
               </h3>
             </div>
-
             {/* Benefit 3 */}
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <CheckCircle className="w-8 h-8 text-rose-400" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Achieve academic excellence
+                {t("benefits.items.2")}
               </h3>
             </div>
-
             {/* Benefit 4 */}
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <CheckCircle className="w-8 h-8 text-rose-400" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Enhance creative abilities
+                {t("benefits.items.3")}
               </h3>
             </div>
-
             {/* Benefit 5 */}
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <CheckCircle className="w-8 h-8 text-rose-400" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Reduce exam stress and anxiety
+                {t("benefits.items.4")}
               </h3>
             </div>
-
             {/* Benefit 6 */}
             <div className="text-center">
               <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <CheckCircle className="w-8 h-8 text-rose-400" />
               </div>
               <h3 className="text-lg font-semibold text-slate-800 mb-2">
-                Unlock hidden potential
+                {t("benefits.items.5")}
               </h3>
             </div>
           </div>
         </div>
-      </section>
-
+      </section>{" "}
       <CosmicCTA
-        title="Ready to Excel in Your Studies?"
-        description="Unlock your full academic potential with our personalized educational remedies and expert guidance for lasting success."
+        title={t("cta.title")}
+        description={t("cta.description")}
         button={{
-          label: "Book Educational Consultation",
-          action: { type: "link", href: "/book-appointment" },
+          label: t("cta.buttonLabel"),
+          action: { type: "link", href: t("cta.buttonLink") },
         }}
       />
     </>
