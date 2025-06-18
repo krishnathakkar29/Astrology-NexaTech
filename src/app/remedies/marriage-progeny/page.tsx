@@ -1,3 +1,4 @@
+import CosmicCTA from "@/components/common/common-cta";
 import { Heart, Star, Users, Baby, CheckCircle } from "lucide-react";
 
 export default function MarriageProgenyPage() {
@@ -438,6 +439,15 @@ export default function MarriageProgenyPage() {
           </div>
         </div>
       </section>
+
+      <CosmicCTA
+        title="Ready to Find Your Soulmate?"
+        description="Take the first step towards a blissful marriage and divine progeny with our personalized astrological guidance and sacred remedies."
+        button={{
+          label: "Book Marriage Consultation",
+          action: { type: "link", href: "/book-appointment" },
+        }}
+      />
     </>
   );
 }

@@ -1,3 +1,4 @@
+import CosmicCTA from "@/components/common/common-cta";
 import {
   Gem,
   CheckCircle,
@@ -674,6 +675,15 @@ export default function GemstonesPage() {
           </div>
         </div>
       </section>
+
+      <CosmicCTA
+        title="Ready to Find Your Perfect Gemstone?"
+        description="Discover the transformative power of authentic gemstones with our expert guidance and personalized selection process."
+        button={{
+          label: "Book Gemstone Consultation",
+          action: { type: "link", href: "/book-appointment" },
+        }}
+      />
     </>
   );
 }

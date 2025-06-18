@@ -1,3 +1,4 @@
+import CosmicCTA from "@/components/common/common-cta";
 import {
   Briefcase,
   TrendingUp,
@@ -599,6 +600,15 @@ export default function CareerPage() {
           </div>
         </div>
       </section>
+
+      <CosmicCTA
+        title="Ready to Transform Your Career?"
+        description="Take charge of your professional destiny with our expert career guidance and powerful remedies."
+        button={{
+          label: "Book Career Consultation",
+          action: { type: "link", href: "/book-appointment" },
+        }}
+      />
     </>
   );
 }

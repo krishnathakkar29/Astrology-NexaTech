@@ -1,3 +1,4 @@
+import CosmicCTA from "@/components/common/common-cta";
 import {
   Clock,
   CheckCircle,
@@ -607,6 +608,15 @@ export default function MuhuratTimingsPage() {
           </div>
         </div>
       </section>
+
+      <CosmicCTA
+        title="Ready to Choose Perfect Timing?"
+        description="Ensure success in your important endeavors with precisely calculated muhurat timings based on ancient Vedic wisdom and cosmic alignments."
+        button={{
+          label: "Book Muhurat Consultation",
+          action: { type: "link", href: "/book-appointment" },
+        }}
+      />
     </>
   );
 }

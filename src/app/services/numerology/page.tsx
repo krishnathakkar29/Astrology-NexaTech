@@ -1,3 +1,4 @@
+import CosmicCTA from "@/components/common/common-cta";
 import { CheckCircle } from "lucide-react";
 
 export default function NumerologyPage() {
@@ -690,6 +691,15 @@ export default function NumerologyPage() {
           </div>
         </div>
       </section>
+
+      <CosmicCTA
+        title="Discover Your Personal Numbers"
+        description="nlock the mystical power of numbers and gain profound insights into your life purpose, personality, and destiny through personalized numerological analysis."
+        button={{
+          label: "Book Your Numerology Reading",
+          action: { type: "link", href: "/book-appointment" },
+        }}
+      />
     </>
   );
 }

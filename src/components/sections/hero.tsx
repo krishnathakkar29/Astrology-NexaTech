@@ -10,7 +10,13 @@ function Hero() {
           backgroundImage: `url("https://images.unsplash.com/photo-1502134249126-9f3755a50d78?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900/80 via-purple-900/70 to-purple-800/60"></div>
+        <div
+          className="absolute inset-0"
+          style={{
+            background: `linear-gradient(135deg, #301931 0%, #261843 50%, #301931 100%)`,
+            opacity: 0.85,
+          }}
+        ></div>
       </div>
       <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 animate-fade-in">

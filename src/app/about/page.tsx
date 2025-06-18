@@ -1,5 +1,6 @@
 import { Users, BookOpen, Award, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import CosmicCTA from "@/components/common/common-cta";
 
 export default function AboutPage() {
   return (
@@ -17,7 +18,13 @@ export default function AboutPage() {
             backgroundImage: `url("https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80")`,
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-900/80 via-purple-800/70 to-purple-700/60"></div>
+          <div
+            className="absolute inset-0"
+            style={{
+              background: `linear-gradient(135deg, #301931 0%, #261843 50%, #301931 100%)`,
+              opacity: 0.85,
+            }}
+          ></div>
         </div>
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold mb-6 text-white">
@@ -353,6 +360,14 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      <CosmicCTA
+        title="Ready to Begin Your Journey?"
+        description="Experience the transformative power of authentic astrological guidance. Our experts are here to illuminate your path forward."
+        button={{
+          label: "Schedule Your Consultation",
+          action: { type: "link", href: "/book-appointment" },
+        }}
+      />
     </>
   );
 }

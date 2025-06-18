@@ -1,3 +1,4 @@
+import CosmicCTA from "@/components/common/common-cta";
 import { Star, CheckCircle } from "lucide-react";
 
 export default function AstrologyPage() {
@@ -371,6 +372,15 @@ export default function AstrologyPage() {
           </div>
         </div>
       </section>
+
+      <CosmicCTA
+        title="Ready to Discover Your Cosmic Blueprint?"
+        description="Unlock the wisdom of your birth chart and gain profound insights into your life's purpose, challenges, and opportunities."
+        button={{
+          label: "Book Your Palmistry Reading",
+          action: { type: "link", href: "/book-appointment" },
+        }}
+      />
     </>
   );
 }

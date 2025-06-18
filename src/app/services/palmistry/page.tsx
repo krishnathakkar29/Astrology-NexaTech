@@ -1,3 +1,4 @@
+import CosmicCTA from "@/components/common/common-cta";
 import { Hand, CheckCircle } from "lucide-react";
 
 export default function PalmistryPage() {
@@ -376,6 +377,15 @@ export default function PalmistryPage() {
           </div>
         </div>
       </section>
+
+      <CosmicCTA
+        title="Ready to Read Your Palms?"
+        description="Discover the secrets hidden in your palms and gain valuable insights into your personality, relationships, and future possibilities."
+        button={{
+          label: "Book Your Palmistry Reading",
+          action: { type: "link", href: "/book-appointment" },
+        }}
+      />
     </>
   );
 }

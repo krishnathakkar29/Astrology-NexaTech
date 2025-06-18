@@ -1,5 +1,7 @@
 import React from "react";
-import { Button } from "../ui/button";
+import { Button, buttonVariants } from "../ui/button";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 function CallToAction() {
   return (
@@ -20,17 +22,24 @@ function CallToAction() {
             store for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              className="text-white text-lg px-8 py-4 rounded-full hover:shadow-lg transition-all duration-300 border-0"
+            <Link
+              href="/book-appointment"
+              className={cn(
+                buttonVariants({
+                  variant: "outline",
+                  size: "lg",
+                }),
+                "text-white text-lg px-8 py-4 md:py-8 rounded-full hover:shadow-lg transition-all duration-300 border-0 hover:scale-105"
+              )}
               style={{
                 background: `linear-gradient(135deg, #CDA2A4 0%, #97637A 100%)`,
               }}
             >
               Book Your Consultation
-            </Button>
+            </Link>
             <Button
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-purple-900 text-lg px-8 py-4 rounded-full transition-all duration-300"
+              className="border-2 bg-transparent text-white hover:bg-white hover:text-cosmic-purple-dark text-lg px-8 py-4 md:py-8 rounded-full transition-all duration-300"
             >
               Explore Our Services
             </Button>

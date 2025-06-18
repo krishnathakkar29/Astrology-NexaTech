@@ -1,3 +1,4 @@
+import CosmicCTA from "@/components/common/common-cta";
 import { Flame, CheckCircle, Sun, Star, Shield, Sparkles } from "lucide-react";
 
 export default function GrahShantiPoojaPage() {
@@ -637,6 +638,15 @@ export default function GrahShantiPoojaPage() {
           </div>
         </div>
       </section>
+
+      <CosmicCTA
+        title="Ready for Planetary Healing?"
+        description="Transform your life with the divine power of Graha Shanti Pooja and experience cosmic harmony like never before."
+        button={{
+          label: "Book Graha Shanti Consultation",
+          action: { type: "link", href: "/book-appointment" },
+        }}
+      />
     </>
   );
 }

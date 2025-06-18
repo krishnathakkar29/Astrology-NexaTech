@@ -1,3 +1,4 @@
+import CosmicCTA from "@/components/common/common-cta";
 import {
   GraduationCap,
   Target,
@@ -444,6 +445,15 @@ function page() {
           </div>
         </div>
       </section>
+
+      <CosmicCTA
+        title="Ready to Excel in Your Studies?"
+        description="Unlock your full academic potential with our personalized educational remedies and expert guidance for lasting success."
+        button={{
+          label: "Book Educational Consultation",
+          action: { type: "link", href: "/book-appointment" },
+        }}
+      />
     </>
   );
 }
